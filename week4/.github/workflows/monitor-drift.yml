@@ -15,8 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          lfs: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -33,7 +31,7 @@ jobs:
           cd week4
           # TODO: Implement metric computation
           # - Load baseline and current data
-          # - Compute 8+ metrics (nulls, distributions, PSI, KS test, etc.)
+          # - Compute 5+ metrics (nulls, distributions, PSI, KS test, etc.)
           # - Report metrics and thresholds
           # - Determine if any alerts should fire
           python3 scripts/compute_metrics.py

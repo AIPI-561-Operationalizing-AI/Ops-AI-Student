@@ -22,7 +22,7 @@ Your Week 2-3 API is running well. But new data (Feb 2-28) shows quality/perform
 - `scripts/compute_metrics.py` - metric calculations
 - `scripts/detect_drift.py` - drift detection logic
 - Tests for monitoring
-- **Report (1 page max):**
+- **Report:**
   - Metrics defined + thresholds
   - Monitoring schedule choice + justification
   - Retraining trigger strategy
@@ -114,7 +114,7 @@ Edit the template `.github/workflows/monitor-drift.yml`:
 
 ## Part 2: Design Monitoring Framework
 
-Define 8+ metrics to detect four types of problems:
+Implement at least 5 of the 8 provided metric stubs in order to detect four types of problems:
 1. **Data quality issues** (nulls, duplicates, outliers)
 2. **Data drift** (input distribution changed)
 3. **Concept drift** (model accuracy degraded)
@@ -137,15 +137,15 @@ Metric: Accuracy by Zone
 - Baseline: 85-95% per zone (from BASELINE_METRICS.md)
 - Alert threshold: <80% for any zone
 - Frequency: Daily at 9am (after 24h ground truth lag)
-- Segmentation: Per zone (42 zones) + global rollup
+- Segmentation: Per zone (57 zones) + global rollup
 - Action: If alert fires, check if recent data shows distribution shift
 ```
 
 ### Starter Code
 
-`week4/scripts/metric_template.py` has 8 metric stubs. Implement them based on your design.
+`week4/scripts/metric_template.py` has 8 metric stubs. Implement at least 5 of them based on your design.
 
-**Your 8+ metrics should cover:**
+**Your metrics should cover:**
 - Performance (accuracy overall, by segment)
 - Data quality (nulls, duplicates, outliers)
 - Data drift (distribution shifts - KS test, PSI)
@@ -222,7 +222,7 @@ Be operational: think about what you'd actually do in production.
 
 ---
 
-## Part 4: Write Code (Optional)
+## Part 5: Write Code (Optional)
 
 If implementing monitoring code:
 
@@ -236,17 +236,17 @@ No specific format required. Show your work, document your findings.
 
 ## Deliverables Summary
 
-1. **Drift Detection Report** (3-4 pages)
-   - 4+ drift patterns with quantitative evidence
+1. **Drift Detection Report**
+   - Around 4 drift patterns with quantitative evidence
    - Tables/plots showing the drift
    - Hypotheses on root causes
 
-2. **Monitoring Framework** (1-2 pages)
-   - 8+ metrics specified (computation, baseline, threshold, frequency, segmentation)
+2. **Monitoring Framework**
+   - At least 5 of 8 metrics specified (computation, baseline, threshold, frequency, segmentation)
    - Dashboard mockup or metric list
    - Alert thresholds and interpretation
 
-3. **Retraining Strategy** (1-2 pages)
+3. **Retraining Strategy**
    - Trigger conditions (performance drop %, drift p-value, schedule)
    - Retraining pipeline (steps, timeline)
    - Validation approach (offline testing, shadow, canary)
@@ -271,7 +271,7 @@ No specific format required. Show your work, document your findings.
 | Monitoring design (metrics, thresholds, segmentation) | 25% |
 | Retraining strategy (triggers, pipeline, validation) | 20% |
 | Code implementation (scripts work, produce output) | 15% |
-| Report (clear, 1 page max) | 10% |
+| Report | 10% |
 
 ---
 

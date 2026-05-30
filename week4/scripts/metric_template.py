@@ -1,8 +1,10 @@
 """
 Monitoring metrics skeleton.
 
-Implement these metrics based on your 8+ metric design from Part 1.
-Each metric should compute a specific health signal about your data/model.
+This file defines 8 metric stubs for monitoring data and model health.
+Implement at least 5 of the 8 metrics based on your monitoring framework design.
+Each metric should compute a specific health signal about your data/model,
+and return a dict (or float) that can be checked against your alert thresholds.
 """
 
 import pandas as pd
@@ -17,7 +19,9 @@ class MetricComputer:
         """Initialize with baseline data."""
         self.baseline_df = baseline_df
 
-    def metric_1_accuracy(self, new_df: pd.DataFrame, predictions: np.ndarray, actuals: np.ndarray) -> float:
+    def metric_1_accuracy(
+        self, new_df: pd.DataFrame, predictions: np.ndarray, actuals: np.ndarray
+    ) -> float:
         """
         Metric 1: Overall Accuracy
 
@@ -25,7 +29,9 @@ class MetricComputer:
         """
         pass
 
-    def metric_2_accuracy_by_zone(self, new_df: pd.DataFrame, predictions: np.ndarray, actuals: np.ndarray) -> dict:
+    def metric_2_accuracy_by_zone(
+        self, new_df: pd.DataFrame, predictions: np.ndarray, actuals: np.ndarray
+    ) -> dict:
         """
         Metric 2: Accuracy by Zone
 
@@ -86,7 +92,12 @@ class MetricComputer:
         """
         pass
 
-    def compute_all_metrics(self, new_df: pd.DataFrame, predictions: np.ndarray = None, actuals: np.ndarray = None) -> dict:
+    def compute_all_metrics(
+        self,
+        new_df: pd.DataFrame,
+        predictions: np.ndarray = None,
+        actuals: np.ndarray = None,
+    ) -> dict:
         """
         Compute all metrics.
 
