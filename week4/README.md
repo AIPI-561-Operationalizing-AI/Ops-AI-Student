@@ -8,7 +8,7 @@
 
 ## Assignment
 
-Your Week 2-3 API is running well. But new data (Feb 2-28) shows quality/performance degradation. Add automated monitoring to detect drift and trigger retraining.
+Your Week 2-3 API is running well. But new data (Feb 2-28) shows quality/performance degradation (you can filter `demand_enriched_week4.parquet` to this window to check new data). Add automated monitoring to detect drift and trigger retraining.
 
 **Your tasks:**
 1. Define metrics to catch drift (distributions, outliers, performance)
@@ -27,6 +27,8 @@ Your Week 2-3 API is running well. But new data (Feb 2-28) shows quality/perform
   - Monitoring schedule choice + justification
   - Retraining trigger strategy
 
+**Note:** A running GKE cluster is NOT expected in your final deliverables. Similar to previous assignments, you are not required to spend GCP credits on maintaining a cluster. If you choose to deploy a cluster, please include screenshots in your report clearly describing how it was operated in the context of this assignment.
+
 ---
 
 ## What You Have
@@ -38,7 +40,7 @@ week4/
 ├── data/
 │   ├── demand_enriched_baseline.parquet  (Jan 1-15, healthy)
 │   ├── demand_enriched_week3.parquet     (Jan 16-Feb 1, corrupted)
-│   └── demand_enriched_week4.parquet     (Feb 2-28, drifted)
+│   └── demand_enriched_week4.parquet     (full history 2023–Feb 2026; drift injected Feb 2–28, 2026)
 ├── BASELINE_METRICS.md        (reference values)
 ├── scripts/
 │   ├── metric_template.py     (TEMPLATE: Implement metrics)
@@ -58,41 +60,26 @@ You have a template `.github/workflows/monitor-drift.yml`. Fill in the TODOs:
 3. Implement drift detection step
 4. Alert ops if thresholds breached (create GitHub issue)
 
+### How the Scripts Fit Together
+
+- `metric_template.py` — defines the `MetricComputer` class with 8 metric stubs. Implement the metric logic here.
+- `compute_metrics.py` — **you write this**. Import `MetricComputer`, load baseline and new data, run all metrics, check thresholds, and write results to `metrics-*.json`. This is what CI runs.
+- `detect_drift.py` — **you write the body of this**. Run statistical tests (KS, PSI) to identify drift patterns. This is also run by CI.
+
+CI runs both `compute_metrics.py` and `detect_drift.py` independently.
+
 ---
 
-## Setup: Install Git LFS
+## Setup: No LFS Involved
 
-The parquet files are stored with Git LFS. After cloning:
-
-```bash
-# Install Git LFS
-brew install git-lfs  # macOS
-apt-get install git-lfs  # Linux
-
-# One-time setup (first time only)
-git lfs install
-
-# Pull actual files from LFS
-git lfs pull
-
-# Verify files are downloaded (should show MB, not KB)
-ls -lh week4/data/*.parquet
-```
-
-If files show `version https://git-lfs.github.com/3` or `oid sha256:...`, LFS didn't pull. Run `git lfs pull` again.
-
-**Troubleshooting:**
-- `git lfs pull` takes a minute or two (75MB of data)
-- Requires internet connection
-- If still having issues, run: `git lfs install --force` then `git lfs pull`
-
+Make sure data files have been downloaded fully without any LFS pointers. Pull or re-clone the course repo if you face issues.
 ---
 
 ## Baseline Understanding
 
 **Baseline period: Jan 1-15, 2026**
 - Model trained on this data
-- Accuracy: 91.2% overall
+- Accuracy: approximately 91% overall
 - Null rates: <0.5%
 - No duplicates
 - No drift

@@ -10,28 +10,23 @@ Use these values as your reference when detecting drift in Feb 2-28 data.
 
 ## Data Distribution Metrics
 
+Please note that the actual metrics might vary slightly, and the values below are indicative. Please rely on what you actually find from the data files for your analysis.
+
 ### Trip Count (Target Variable)
 
 | Statistic | Value |
 |-----------|-------|
-| **Mean** | 1.0 trips / zone / 15min |
-| **Std Dev** | 2.2 |
+| **Mean** | ~14.1 trips / zone / 15min |
+| **Std Dev** | ~19.2 |
 | **Min** | 0 |
-| **Max** | 18 |
-| **P50 (Median)** | 0 |
-| **P95** | 5 |
-| **P99** | 11 |
+| **Max** | 213 |
+| **P50 (Median)** | 6 |
+| **P95** | 53 |
+| **P99** | 91 |
 
 ### Feature Distributions (Jan 1-15 Baseline)
 
-| Feature | Null Rate |
-|---------|-----------|
-| **PULocationID** | 0.00% |
-| **trip_count** | 0.00% |
-| **lag_15min** | 0.07% |
-| **lag_1h** | 0.28% |
-| **roll_mean_1h** | 0.07% |
-| **is_holiday** | 0.00% |
+Null rates are 0.0 for all features.
 
 ---
 
@@ -41,7 +36,7 @@ Use these values as your reference when detecting drift in Feb 2-28 data.
 |-------|----------------|-----------------|
 | **Null Rate (trip_count)** | 0.0% | >1% |
 | **Null Rate (PULocationID)** | 0.0% | >1% |
-| **Null Rate (lag features)** | <0.3% | >2% |
+| **Null Rate (lag features)** | 0.0% | >2% |
 | **Duplicate Rows** | 0 | >0.5% of rows |
 
 ---
@@ -95,7 +90,7 @@ baseline = pd.read_parquet("week4/data/demand_enriched_baseline.parquet")
 new_data = pd.read_parquet("week4/data/demand_enriched_week4.parquet")
 
 # Compute mean trip count
-baseline_mean = baseline['trip_count'].mean()  # Should be ~1.0
+baseline_mean = baseline['trip_count'].mean()  # Should be ~14.1
 new_mean = new_data['trip_count'].mean()
 
 # Check if shift is significant
@@ -109,7 +104,7 @@ if abs(shift_pct) > 10:
 
 ## Notes
 
-- These baselines are computed from Jan 1-15, 2026 data (1440 rows, 32 zones, 96 time slots)
+- These baselines are computed from Jan 1-15, 2026 data
 - Baseline dataset has zero duplicates and minimal null values
 - Feb 2-28 data shows drift patterns; use KS test and PSI to quantify them
 - Student task: implement metrics in Week 4 and identify drifts using these thresholds
