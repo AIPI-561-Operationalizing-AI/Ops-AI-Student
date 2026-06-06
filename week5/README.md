@@ -345,7 +345,7 @@ print(f"Avg cost per query: ${metrics['avg_cost_per_query']:.4f}")
 | Tools implemented in code (3+ with execute()) | 30% |
 | Agent reasoning loop code (LLM calls tools correctly) | 30% |
 | Cost tracking code (accurate token/cost calculation) | 20% |
-| Report showinng tests passing (screenshots of tools + agent responding) | 20% |
+| Report showing tests passing (screenshots of tools + agent responding) | 20% |
 
 ---
 
