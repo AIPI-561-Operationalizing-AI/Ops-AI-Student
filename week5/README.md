@@ -336,16 +336,16 @@ print(f"Avg cost per query: ${metrics['avg_cost_per_query']:.4f}")
 ## Deliverables
 
 1. **`app_starter.py`** — Agent class with 3+ tools, tool execution loop, cost tracking
-2. **Screenshot** — 10 test queries showing working agent + total cost
+2. **One report with screenshots and documentation if necessary** — 10 test queries showing working agent + total cost, description of code structure if it was modified significantly
 
 ## Grading
 
 | Criterion | Weight |
 |-----------|--------|
-| Tools implemented (3+ with execute()) | 30% |
+| Tools implemented in code (3+ with execute()) | 30% |
 | Agent reasoning loop code (LLM calls tools correctly) | 30% |
-| Cost tracking (accurate token/cost calculation) | 20% |
-| Tests passing (screenshots of tools + agent responding) | 20% |
+| Cost tracking code (accurate token/cost calculation) | 20% |
+| Report showinng tests passing (screenshots of tools + agent responding) | 20% |
 
 ---
 
