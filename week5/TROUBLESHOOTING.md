@@ -61,72 +61,7 @@ pip install --upgrade google-genai
               time.sleep(2 ** attempt)
   ```
 
-### Firestore Connection Error
-**Error:** `google.cloud.exceptions.PermissionDenied`
-
-**Solution:**
-- Firestore is optional (for full RAG)
-- For basic agent, skip Firestore; implement simple in-memory document retrieval
-- To use Firestore: `gcloud auth application-default login`
-
-## Testing Issues
-
-### Tests Fail: Database Not Found
-**Error:** `FileNotFoundError: data/techcorp.db`
-
-**Solution:**
-```bash
-# Verify file exists
-ls -lh week5/data/techcorp.db
-
-# If missing, recreate it:
-python3 -c "
-import sqlite3
-conn = sqlite3.connect('week5/data/techcorp.db')
-conn.execute('CREATE TABLE IF NOT EXISTS employees (id TEXT, name TEXT)')
-conn.commit()
-"
-```
-
-### Tests Fail: "test_agent_initialization" 
-**Error:** Tests expect agent to initialize without API key
-
-**Solution:**
-- Tests should use dummy key: `Agent("data/techcorp.db", api_key="test-key")`
-- Tests should mock API calls for unit tests
-- See `week5-implemented/tests/test_agent.py` for examples
-
-## Deployment Issues
-
-### Container Build Fails
-**Error:** `pip: command not found` in Docker
-
-**Solution:**
-- Ensure Dockerfile uses `pip3` or `/usr/local/bin/pip`
-- Verify requirements.txt is copied before `pip install`
-
-### Service Endpoint Not Responding
-**Error:** Connection refused on localhost:8000
-
-**Solution:**
-1. Check if service is running:
-   ```bash
-   curl http://localhost:8000/docs  # FastAPI swagger UI
-   ```
-2. If not running:
-   ```bash
-   python3 -m uvicorn app.main:app --reload
-   ```
-3. Check logs:
-   ```bash
-   docker logs <container-id>
-   kubectl logs deployment/agent -n default
-   ```
-
 ## Common Questions
-
-**Q: Do I need Firestore for RAG?**
-A: Not required. You can implement basic RAG with in-memory document indexing or simple keyword search first. Firestore is optional for production.
 
 **Q: Can I use a different LLM?**
 A: Yes! Google GenAI SDK supports multiple models. Check https://ai.google.dev/ for current options. Update your Agent class to use a different model_id.

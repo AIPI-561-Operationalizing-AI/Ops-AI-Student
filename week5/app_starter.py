@@ -24,6 +24,7 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
 # TASK 1: Implement the Tool base class
 
+
 class Tool:
     """Base class for tools the agent can call."""
 
@@ -42,14 +43,12 @@ class Tool:
 
 # TASK 2: Implement EmployeeLookupTool
 
+
 class EmployeeLookupTool(Tool):
     """Look up employee information from SQLite database."""
 
     def __init__(self, db_path: str):
-        super().__init__(
-            "employee_lookup",
-            "Find employee information by name or ID"
-        )
+        super().__init__("employee_lookup", "Find employee information by name or ID")
         self.db_path = db_path
 
     def execute(self, employee_name: str = None, employee_id: str = None) -> str:
@@ -79,20 +78,15 @@ class EmployeeLookupTool(Tool):
             return f"Error: {str(e)}"
 
 
-
 # TASK 3: Implement PolicySearchTool
+
 
 class PolicySearchTool(Tool):
     """Search policy documents by keyword."""
 
     def __init__(self):
-        super().__init__(
-            "policy_search",
-            "Search policy documents by keyword or topic"
-        )
-        # TODO: Load policy documents from data/ folder
-        # Simple approach: load from JSON or CSV
-        # Advanced: embed and store in Firestore (optional)
+        super().__init__("policy_search", "Search policy documents by keyword or topic")
+        # TODO: Load data/documents.json
         self.documents = []
 
     def execute(self, query: str, limit: int = 5) -> str:
@@ -121,43 +115,35 @@ class PolicySearchTool(Tool):
 
 # TASK 4: Implement ExpenseQueryTool
 
+
 class ExpenseQueryTool(Tool):
     """Query expense policies and approval limits."""
 
-    def __init__(self, db_path: str):
-        super().__init__(
-            "expense_query",
-            "Query expense approval limits and per-diem rates"
-        )
-        self.db_path = db_path
+    def __init__(self):
+        super().__init__("expense_query", "Query expense approval limits by role")
+        # TODO: load data/policies.json into the documents attribute
+        self.policies = {}
 
-    def execute(self, query_type: str, **kwargs) -> str:
-        """Query expense information.
+    def execute(self, role: str) -> str:
+        """Query expense approval limit for a given role.
 
-        TODO: Implement two query types:
-
-        1. query_type="approval_limit" with role="engineer"
-           SELECT approval_limit FROM expense_policies WHERE role = ?
-           Return: "Approval limit for engineer: $5000"
-
-        2. query_type="per_diem" with location="NYC"
-           SELECT daily_limit FROM per_diem WHERE location = ?
-           Return: "Per diem for NYC: $250/day"
+        TODO: Implement expense lookup:
+        1. Look up role in self.policies["expense"]["approval_limits"]
+        2. Return: "Approval limit for {role}: ${amount}"
+        3. If role not found, return "Role not found: {role}"
 
         Args:
-            query_type: "approval_limit" or "per_diem"
-            **kwargs: role or location parameters
+            role: Employee role (ic1_ic2, ic3, manager, director, vp)
 
         Returns:
-            String with query result
+            String with approval limit for the given role
         """
         try:
             # TODO: implement
-            return f"TODO: implement {query_type} query"
+            return "TODO: implement expense query"
         except Exception as e:
             logger.error(f"Expense query error: {e}")
             return f"Error: {str(e)}"
-
 
 
 # TASK 5: Implement the Agent class
@@ -196,7 +182,7 @@ class Agent:
         # self.tools = {
         #     "employee_lookup": EmployeeLookupTool(db_path),
         #     "policy_search": PolicySearchTool(),
-        #     "expense_query": ExpenseQueryTool(db_path),
+        #     "expense_query": ExpenseQueryTool(),
         # }
 
         # TODO: Initialize metrics
@@ -204,14 +190,27 @@ class Agent:
         # self.total_cost = 0.0
         # self.queries_run = 0
 
+    def _build_system_prompt(self, user_role: str) -> str:
+        """Build system prompt describing available tools.
+
+        TODO: Create a prompt that:
+        1. Describes the agent's purpose
+        2. Lists all available tools with descriptions
+        3. Explains how to use them
+        4. Sets the user's role context
+
+        Returns:
+            System prompt string
+        """
+        # TODO: implement
+        return "TODO: implement system prompt"
+
     def query(self, user_query: str, user_role: str = "engineer") -> Dict[str, Any]:
         """Answer a question using LLM + tools.
 
         TODO: Implement the reasoning loop:
 
-        1. Build system prompt describing available tools
-           - List all tools and their descriptions
-           - Example: "Available tools: employee_lookup, policy_search, ..."
+        1. Call _build_system_prompt(user_role) to build the system prompt
 
         2. Call Gemini LLM with system prompt + user question
            - self.client.models.generate_content(model="gemini-2.5-pro", ...)
@@ -252,23 +251,8 @@ class Agent:
             "answer": "TODO: implement agent query logic",
             "tokens_used": 0,
             "cost": 0.0,
-            "role": user_role
+            "role": user_role,
         }
-
-    def _build_system_prompt(self, user_role: str) -> str:
-        """Build system prompt describing available tools.
-
-        TODO: Create a prompt that:
-        1. Describes the agent's purpose
-        2. Lists all available tools with descriptions
-        3. Explains how to use them
-        4. Sets the user's role context
-
-        Returns:
-            System prompt string
-        """
-        # TODO: implement
-        return "TODO: implement system prompt"
 
     def _estimate_query_cost(self, input_tokens: int, output_tokens: int) -> float:
         """Calculate cost based on tokens.
