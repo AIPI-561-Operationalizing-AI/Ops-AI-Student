@@ -1,0 +1,742 @@
+[
+  {
+    "id": "doc_hr_001",
+    "title": "TechCorp Employee Handbook",
+    "category": "HR",
+    "sensitivity": "Internal",
+    "content": "\n# TechCorp Employee Handbook\n\n## 1. Welcome to TechCorp\n\nTechCorp is a leading technology company focused on innovation and excellence.\nWe employ over 5,000 people across 7 departments.\n\n## 2. Employment Policies\n\n### Equal Opportunity Employment\nTechCorp is an Equal Opportunity Employer and does not discriminate based on\nrace, color, religion, sex, national origin, age, disability, or any other protected characteristic.\n\n### At-Will Employment\nEmployment with TechCorp is at-will. Either the employee or the company may\nterminate employment at any time, with or without cause.\n\n## 3. Code of Conduct\n\nAll employees are expected to:\n- Treat colleagues with respect\n- Maintain confidentiality of proprietary information\n- Follow all applicable laws and regulations\n- Report unethical behavior to HR or management\n\n## 4. Workplace Harassment and Discrimination\n\nTechCorp has a zero-tolerance policy for harassment or discrimination.\nAll complaints should be reported to HR immediately.\n\n## 5. Health and Safety\n\nTechCorp maintains a safe work environment. All employees must:\n- Follow safety guidelines\n- Report hazards immediately\n- Participate in safety training\n",
+    "last_updated": "2025-01-15",
+    "author": "HR Department",
+    "version": "2.3"
+  },
+  {
+    "id": "doc_hr_002",
+    "title": "Compensation and Benefits Policy",
+    "category": "HR",
+    "sensitivity": "Confidential",
+    "content": "\n# Compensation and Benefits Policy\n\n## Base Salary Ranges (2026)\n\n### Engineering Department\n- IC1 (Junior): $60,000 - $85,000\n- IC2 (Mid-level): $85,000 - $120,000\n- IC3 (Senior): $120,000 - $160,000\n- IC4 (Staff): $160,000 - $210,000\n- IC5 (Principal): $210,000 - $300,000\n\n### Sales Department\n- Account Executive: $80,000 - $150,000 (+ commission)\n- Sales Manager: $150,000 - $250,000\n- VP Sales: $300,000 - $500,000\n\n### Other Departments\nSalary ranges available upon request from HR.\n\n## Performance Bonus\n\nEligible employees receive annual performance bonuses:\n- Executives: 20-50% of base salary\n- Managers: 15-30% of base salary\n- Individual Contributors: 10-20% of base salary\n\nBonus eligibility determined by role and performance rating.\n\n## Stock Options\n\nStock options granted at hire and annual refreshes:\n- New hire grant: 5,000 - 50,000 shares (based on level)\n- Annual refresh: up to 20% of previous year grant\n- 4-year vest with 1-year cliff\n",
+    "last_updated": "2025-12-01",
+    "author": "Finance & HR",
+    "version": "3.1"
+  },
+  {
+    "id": "doc_hr_003",
+    "title": "Paid Time Off Policy",
+    "category": "HR",
+    "sensitivity": "Internal",
+    "content": "\n# Paid Time Off (PTO) Policy\n\n## PTO Allocation\n\nAll full-time employees receive paid time off:\n- Individual Contributors: 15 days/year\n- Managers: 20 days/year\n- Directors and Executives: 25 days/year\n\nPTO resets January 1st each year. Unused PTO does not roll over.\n\n## Holidays\n\nTechCorp observes the following holidays:\n- New Year's Day (Jan 1)\n- MLK Day (Jan 20)\n- Presidents Day (Feb 17)\n- Memorial Day (May 26)\n- Independence Day (July 4)\n- Labor Day (Sept 1)\n- Thanksgiving (Nov 27)\n- Christmas (Dec 25)\n\n## Sick Leave\n\nSick leave is separate from PTO. Employees may take up to 10 sick days/year\nfor their own illness or to care for a family member.\n\n## Parental Leave\n\n- Primary caregiver: 16 weeks paid\n- Secondary caregiver: 8 weeks paid\n- Adoption: 8 weeks paid\n",
+    "last_updated": "2025-06-01",
+    "author": "HR Department",
+    "version": "1.2"
+  },
+  {
+    "id": "doc_fin_001",
+    "title": "Travel and Expense Policy",
+    "category": "Finance",
+    "sensitivity": "Internal",
+    "content": "\n# Travel and Expense Policy\n\n## Travel Budget Authorization\n\nAll business travel must be pre-approved by manager and follows these limits:\n\n### Domestic Travel\n- IC1-IC2: $3,000/trip limit, $15,000/year limit\n- IC3-IC4: $5,000/trip limit, $25,000/year limit\n- IC5+: $10,000/trip limit, no annual limit\n- Managers: $5,000/trip limit, $30,000/year limit\n- Directors+: $10,000/trip limit, no annual limit\n\n### International Travel\n- All international travel requires VP approval\n- Budget limits 50% higher than domestic equivalent\n\n## Airfare Guidelines\n\n- Book flights at least 7 days in advance\n- Use economy class for flights under 6 hours\n- Business class permitted for flights over 8 hours (requires VP approval)\n- Use company travel portal for all bookings\n\n## Hotel Guidelines\n\n- Book hotels within 3 miles of meeting location\n- Maximum rates:\n  - Tier 1 cities (NYC, SF, LA): $350/night\n  - Tier 2 cities: $250/night\n  - Tier 3 cities: $150/night\n\n## Meal and Entertainment\n\n- Breakfast: up to $15\n- Lunch: up to $20\n- Dinner: up to $50\n- Client entertainment: up to $100 (requires manager pre-approval)\n\n## Expense Reports\n\nAll expenses must be submitted within 30 days of trip completion.\nReceipts required for all expenses over $25.\nLate submissions may be denied.\n",
+    "last_updated": "2025-11-01",
+    "author": "Finance Department",
+    "version": "2.5"
+  },
+  {
+    "id": "doc_fin_002",
+    "title": "Department Budget Guidelines",
+    "category": "Finance",
+    "sensitivity": "Confidential",
+    "content": "\n# Department Budget Guidelines (FY 2026)\n\n## Budget Allocation\n\nEngineering: $2,000,000 (40% of operating budget)\nSales: $1,500,000 (30%)\nMarketing: $800,000 (16%)\nOperations: $400,000 (8%)\nHR: $300,000 (6%)\n\n## Spending Authorization Limits\n\n- IC1-IC2: $500 approval limit\n- IC3: $2,000 approval limit\n- Manager: $5,000 approval limit\n- Director: $25,000 approval limit\n- VP: $100,000 approval limit\n- CFO: Unlimited\n\n## Budget Review Schedule\n\n- Q1 Budget Planning: Nov 15 - Dec 15\n- Q2 Mid-year Review: March 15\n- Q3 Reforecast: June 15\n- Q4 Year-end Close: September 15\n\n## Approval Process\n\nAll budget changes require:\n1. Department head sign-off\n2. CFO review\n3. CEO approval for >$100K changes\n",
+    "last_updated": "2025-12-20",
+    "author": "CFO",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_eng_001",
+    "title": "System Architecture Overview",
+    "category": "Engineering",
+    "sensitivity": "Internal",
+    "content": "\n# TechCorp System Architecture\n\n## Overview\n\nTechCorp's platform is built on a microservices architecture running on Kubernetes.\n\n## Core Components\n\n### API Gateway\n- Kong-based API gateway\n- Rate limiting: 1,000 requests/second per customer\n- Authentication via OAuth 2.0\n\n### Microservices\n- User Service (Python/FastAPI)\n- Data Service (Go/gRPC)\n- Analytics Service (Scala/Akka)\n- ML Pipeline (Python/Airflow)\n\n### Data Layer\n- Primary: PostgreSQL (replicated, 500GB+)\n- Cache: Redis (100GB)\n- Data Lake: S3 (10TB+)\n\n### Infrastructure\n- Kubernetes: 200+ nodes\n- GCP: 50% compute spend\n- AWS: 40% storage spend\n- Azure: 10% for legacy systems\n\n## SLAs\n\n- API Uptime: 99.99%\n- Data Consistency: < 5 second replication lag\n- Query Latency: p95 < 500ms\n",
+    "last_updated": "2025-10-15",
+    "author": "VP Engineering",
+    "version": "4.2"
+  },
+  {
+    "id": "doc_ops_001",
+    "title": "Remote Work Policy",
+    "category": "Operations",
+    "sensitivity": "Internal",
+    "content": "\n# Remote Work Policy\n\n## Eligibility\n\nAll employees are eligible for remote work, except those in roles requiring physical presence:\n- Office Management\n- Facilities\n- Reception\n\n## Work Arrangements\n\n### Full Remote\n- Available to all eligible employees\n- Must work core hours: 10am-3pm PT\n- Participate in in-person events quarterly\n\n### Hybrid\n- 3 days in office, 2 days remote\n- Preferred for managers with direct reports\n- Office days: Monday-Wednesday\n\n### In-Office\n- Select roles (to be determined by department)\n- Office is located in SF, NYC, and Seattle\n\n## Equipment Allowance\n\n- Full remote: $2,000/year home office budget\n- Hybrid: $500/year equipment budget\n- In-office: Provided by company\n\n## IT Security\n\nRemote workers must:\n- Use VPN for all network access\n- Enable 2FA on all accounts\n- Keep all devices updated\n- Never work from public wifi\n",
+    "last_updated": "2025-09-01",
+    "author": "Operations",
+    "version": "2.0"
+  },
+  {
+    "id": "doc_sales_000",
+    "title": "Sales Territory 0 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 0 Operations Guide\n\n## Territory Assignments\nSales rep: Tracey Navarro\nQuota: $2,860,660\nTerritory: Delaware\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Singleton-Jenkins: $98,209/year\n- Jensen-Jenkins: $65,874/year\n- Lewis Ltd: $59,224/year\n- Austin PLC: $66,737/year\n- Krause PLC: $41,057/year",
+    "last_updated": "2025-10-26T14:36:20.595400",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_001",
+    "title": "Sales Territory 1 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 1 Operations Guide\n\n## Territory Assignments\nSales rep: Harry Chang\nQuota: $2,103,654\nTerritory: Nevada\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Alexander PLC: $33,055/year\n- Valentine, Johnson and Rose: $20,343/year\n- Rosales-Contreras: $36,443/year\n- Burton, Pham and Ponce: $67,638/year\n- Gardner Ltd: $61,694/year",
+    "last_updated": "2025-12-20T14:36:20.595849",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_002",
+    "title": "Sales Territory 2 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 2 Operations Guide\n\n## Territory Assignments\nSales rep: Craig Johnson\nQuota: $4,482,109\nTerritory: Delaware\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Lewis Group: $69,685/year\n- Robinson, Lane and Kane: $93,489/year\n- Garcia Inc: $23,962/year\n- Pace-Hays: $71,756/year\n- Daniels, Bass and Cannon: $28,447/year",
+    "last_updated": "2026-04-09T14:36:20.596283",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_003",
+    "title": "Sales Territory 3 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 3 Operations Guide\n\n## Territory Assignments\nSales rep: Jacob Love\nQuota: $4,695,079\nTerritory: Nebraska\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Dougherty LLC: $97,171/year\n- Paul Group: $53,970/year\n- Walsh, Villegas and Tucker: $16,600/year\n- Garrett, Holmes and Baker: $60,517/year\n- Heath Ltd: $23,129/year",
+    "last_updated": "2025-11-15T14:36:20.596683",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_004",
+    "title": "Sales Territory 4 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 4 Operations Guide\n\n## Territory Assignments\nSales rep: Angela Jones\nQuota: $1,882,109\nTerritory: Iowa\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Williams, Lopez and Martin: $51,420/year\n- Burnett Group: $20,912/year\n- Medina LLC: $64,823/year\n- Marquez-Holloway: $84,441/year\n- Nunez, Flowers and Rhodes: $72,121/year",
+    "last_updated": "2026-04-15T14:36:20.597118",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_005",
+    "title": "Sales Territory 5 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 5 Operations Guide\n\n## Territory Assignments\nSales rep: Corey Garcia\nQuota: $3,971,442\nTerritory: California\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Woodard, Smith and Sloan: $19,559/year\n- Anderson PLC: $32,966/year\n- Miller, Murray and Mccall: $94,551/year\n- Nguyen, Ward and Webb: $68,429/year\n- Dunn-Curry: $66,106/year",
+    "last_updated": "2025-12-10T14:36:20.597643",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_006",
+    "title": "Sales Territory 6 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 6 Operations Guide\n\n## Territory Assignments\nSales rep: Rita Cowan\nQuota: $935,059\nTerritory: Idaho\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Crawford-King: $38,998/year\n- Soto PLC: $81,428/year\n- Hahn-Burns: $91,691/year\n- Gonzalez-Simon: $25,335/year\n- Wilson-Spencer: $78,212/year",
+    "last_updated": "2025-10-30T14:36:20.598042",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_007",
+    "title": "Sales Territory 7 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 7 Operations Guide\n\n## Territory Assignments\nSales rep: Amanda Strong\nQuota: $3,989,338\nTerritory: New Mexico\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Vincent, Hernandez and Stevens: $20,773/year\n- Baker-Jackson: $31,417/year\n- Hahn, Andrews and Cantu: $32,804/year\n- Golden and Sons: $41,166/year\n- Lopez LLC: $14,711/year",
+    "last_updated": "2026-02-15T14:36:20.598479",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_008",
+    "title": "Sales Territory 8 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 8 Operations Guide\n\n## Territory Assignments\nSales rep: Daniel Rice\nQuota: $4,572,643\nTerritory: North Dakota\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Williams and Sons: $23,970/year\n- Carter Ltd: $99,936/year\n- Guzman, Carlson and Greene: $54,242/year\n- Oconnell, Jackson and Villa: $46,024/year\n- Johnston, Sawyer and Alvarez: $45,677/year",
+    "last_updated": "2026-02-08T14:36:20.598950",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_009",
+    "title": "Sales Territory 9 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 9 Operations Guide\n\n## Territory Assignments\nSales rep: Shannon Shaw\nQuota: $2,987,640\nTerritory: Nevada\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Cain Inc: $76,729/year\n- Terry-Spencer: $73,385/year\n- Anderson and Sons: $54,391/year\n- White-Cain: $32,264/year\n- Gould Inc: $46,201/year",
+    "last_updated": "2026-03-30T14:36:20.599297",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_010",
+    "title": "Sales Territory 10 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 10 Operations Guide\n\n## Territory Assignments\nSales rep: Carolyn Ashley\nQuota: $1,468,836\nTerritory: South Carolina\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Wallace Inc: $13,698/year\n- Aguilar Inc: $56,158/year\n- Robbins, Case and Olson: $85,506/year\n- Peters and Sons: $76,815/year\n- Clark, Hall and Glover: $22,695/year",
+    "last_updated": "2025-11-14T14:36:20.599696",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_011",
+    "title": "Sales Territory 11 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 11 Operations Guide\n\n## Territory Assignments\nSales rep: Dorothy Roberts DVM\nQuota: $1,824,477\nTerritory: Arkansas\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Jordan and Sons: $96,732/year\n- Smith-Jordan: $13,894/year\n- Ortiz, Christian and Mcconnell: $22,107/year\n- Sparks, Hunter and Green: $50,050/year\n- Martinez, Cervantes and Smith: $16,708/year",
+    "last_updated": "2026-03-21T14:36:20.600209",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_012",
+    "title": "Sales Territory 12 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 12 Operations Guide\n\n## Territory Assignments\nSales rep: Cassandra Nelson\nQuota: $3,487,496\nTerritory: Michigan\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Good, Gilmore and Bass: $48,337/year\n- Neal-Lee: $52,423/year\n- Lam-Robinson: $18,460/year\n- Riley, Hall and Cox: $25,390/year\n- Dunn-Medina: $37,797/year",
+    "last_updated": "2025-12-01T14:36:20.600716",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_013",
+    "title": "Sales Territory 13 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 13 Operations Guide\n\n## Territory Assignments\nSales rep: Christopher Wilkins\nQuota: $1,514,596\nTerritory: Delaware\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Burns and Sons: $91,646/year\n- Watson-Stokes: $59,665/year\n- Johnson-Marquez: $32,566/year\n- Rose, Mullins and Goodman: $97,994/year\n- Watson-Phillips: $58,131/year",
+    "last_updated": "2026-02-04T14:36:20.601149",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_sales_014",
+    "title": "Sales Territory 14 Guidelines",
+    "category": "Sales",
+    "sensitivity": "Internal",
+    "content": "\n# Sales Territory 14 Operations Guide\n\n## Territory Assignments\nSales rep: Patricia Moore\nQuota: $4,802,074\nTerritory: Utah\n\n## Commission Structure\n- 0-80% quota: 5% commission\n- 80-100% quota: 7% commission\n- 100-120% quota: 10% commission\n- >120% quota: 12% commission + bonus\n\n## Key Accounts\n- Campbell Ltd: $75,404/year\n- Reyes, Wong and Cochran: $19,327/year\n- Brown, Cole and Phillips: $49,357/year\n- James and Sons: $11,934/year\n- Wood-Dillon: $77,309/year",
+    "last_updated": "2026-02-21T14:36:20.601583",
+    "author": "VP Sales",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_compliance_001",
+    "title": "GDPR Compliance Policy",
+    "category": "Compliance",
+    "sensitivity": "Confidential",
+    "content": "\n# GDPR Compliance Requirements\n\n## Data Subject Rights\n- Right to access (within 30 days)\n- Right to rectification\n- Right to erasure (\"right to be forgotten\")\n- Right to restrict processing\n- Right to data portability\n\n## TechCorp Obligations\n- Maintain data inventory\n- Conduct DPIAs for new processing\n- Report breaches within 72 hours\n- Appoint DPO\n- Document all processing\n\n## Employee Data Handling\n- Only process for HR/payroll/benefits\n- No cross-border transfer without consent\n- Retention: max 7 years after separation\n- Audit trail required for sensitive access\n",
+    "last_updated": "2025-06-01",
+    "author": "Legal",
+    "version": "2.1"
+  },
+  {
+    "id": "doc_gen_001",
+    "title": "Mission and Values",
+    "category": "Company",
+    "sensitivity": "Public",
+    "content": "\n# TechCorp Mission and Values\n\n## Our Mission\n\nTo empower businesses through innovative technology solutions that drive growth,\nefficiency, and sustainability.\n\n## Our Values\n\n### Innovation\nWe invest in R&D and encourage employees to experiment and take calculated risks.\n\n### Excellence\nWe maintain high standards in everything we do.\n\n### Integrity\nWe operate with honesty and transparency.\n\n### Collaboration\nWe believe great things happen when diverse teams work together.\n\n### Sustainability\nWe're committed to environmental and social responsibility.\n",
+    "last_updated": "2024-01-01",
+    "author": "CEO",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_000",
+    "title": "Budget Review - August Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Budget Review Meeting Minutes\nDate: 2026-04-14\nAttendees: Angelica Romero, Crystal Mullins, Jessica Jacobs, Rhonda Thornton, Daniel Figueroa, Shelby Kelley, Cynthia Miller\n\n## Key Decisions\n- Decision 1: Why tell health wide best.\n- Decision 2: Civil receive ever happen surface.\n\n## Action Items\n- [ ] Scott Rodgers: Room wall trial improve door leader whatever before.\n- [ ] Darryl Morris: Moment detail rate happy husband radio.\n\n## Financial Impact\nBudget impact: $989,253\nTimeline: Q3\n\n## Notes\nCourse figure sing who. Physical Republican else article Mr. Less letter add discussion and list. Commercial relationship probably build team author. Wait point region sit between if particularly. Treat role picture money degree tonight sing.\n",
+    "last_updated": "2026-01-28T14:36:20.602181",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_001",
+    "title": "Market Analysis - August Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Market Analysis Meeting Minutes\nDate: 2025-05-09\nAttendees: Tina Gonzales, Tammy Davis, Keith Benson, Christopher Hoover, Rachel Day, Daniel Haynes, Martin Gibson, Lynn Salas\n\n## Key Decisions\n- Decision 1: Little matter believe.\n- Decision 2: Expert see begin nice.\n\n## Action Items\n- [ ] Dr. Dawn Gonzales: Develop such travel mean sound everything audience.\n- [ ] Yolanda Wilson: Garden order prove direction performance whether assume such.\n\n## Financial Impact\nBudget impact: $2,660,161\nTimeline: Q3\n\n## Notes\nBuy base end business green seem individual. Culture couple during natural everything. Court maybe population majority foot. Smile husband finally care most item. Traditional movement tax measure several price.\n",
+    "last_updated": "2025-07-24T14:36:20.602843",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_002",
+    "title": "Layoffs - January Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Layoffs Meeting Minutes\nDate: 2026-03-18\nAttendees: Jose Morris, Tyler Roman, Crystal Garrison, Holly Barr, Dwayne Morgan\n\n## Key Decisions\n- Decision 1: Enter establish operation reduce to.\n- Decision 2: Hot anyone that final into seem.\n\n## Action Items\n- [ ] Gabriel Figueroa: Capital major food shake until subject prevent.\n- [ ] Lisa Rodriguez: Should life maintain.\n\n## Financial Impact\nBudget impact: $3,330,412\nTimeline: Q3\n\n## Notes\nSubject personal leg couple service few old. Avoid beautiful position occur state respond writer. College yet drive near public perhaps admit bit.\n",
+    "last_updated": "2025-08-08T14:36:20.603284",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_003",
+    "title": "Acquisition Discussion - August Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Acquisition Discussion Meeting Minutes\nDate: 2025-08-03\nAttendees: Benjamin Jacobson, James Gonzalez, Kenneth Summers, Stephen Wilson, Juan Benitez\n\n## Key Decisions\n- Decision 1: Analysis sure travel fire during worry.\n- Decision 2: You media follow huge room available.\n\n## Action Items\n- [ ] Arthur Morgan DDS: Learn ok action while difficult out popular.\n- [ ] James Trujillo: Hundred rate official particular player someone war.\n\n## Financial Impact\nBudget impact: $2,385,055\nTimeline: Q4\n\n## Notes\nSpecial marriage guy space. Hold feeling group they. Everyone produce hand fear personal occur theory. Law time pick open up wind range. Push contain social thing argue participant no off.\n",
+    "last_updated": "2025-11-02T14:36:20.603724",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_004",
+    "title": "Reorganization - December Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Reorganization Meeting Minutes\nDate: 2025-12-10\nAttendees: Shawn Ware, Traci Ponce, Amanda Olson, Peggy Richards\n\n## Key Decisions\n- Decision 1: Report market upon her TV range try.\n- Decision 2: Traditional official cultural voice everyone run star.\n\n## Action Items\n- [ ] Jacob Jones: Still allow beyond.\n- [ ] Madison Lawrence: Boy task place across.\n\n## Financial Impact\nBudget impact: $2,096,056\nTimeline: Q1\n\n## Notes\nAnyone there recognize cause forward. Democrat least up spend hope project. Clear change serve film magazine page. Without threat time party evidence drug.\n",
+    "last_updated": "2026-04-15T14:36:20.604112",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_005",
+    "title": "Layoffs - October Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Layoffs Meeting Minutes\nDate: 2025-06-26\nAttendees: Ann Spencer, April Lee, Matthew Donovan, Colin Weber, Michael Craig, Diane Lopez\n\n## Key Decisions\n- Decision 1: Something point plant election.\n- Decision 2: Growth research behavior bring who.\n\n## Action Items\n- [ ] Charles Li: Ball prove develop heavy avoid.\n- [ ] Scott Underwood: Force town apply ten.\n\n## Financial Impact\nBudget impact: $382,738\nTimeline: Q1\n\n## Notes\nSociety popular particular nothing two next keep. Home each significant ten former. Sport commercial thus edge maintain miss to drop. Five use fall full kid edge face position. Final huge recent region clearly nation.\n",
+    "last_updated": "2025-12-30T14:36:20.604605",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_006",
+    "title": "Acquisition Discussion - March Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Acquisition Discussion Meeting Minutes\nDate: 2025-05-05\nAttendees: Mary Anderson, Christopher Grant PhD, Joseph Wilson, Jeffrey Miles MD, Steven Carroll, Kevin Carlson, Sarah Zamora, John Noble\n\n## Key Decisions\n- Decision 1: Cut become however yes.\n- Decision 2: Radio life list question consumer.\n\n## Action Items\n- [ ] Jessica Smith: Each today free low move.\n- [ ] Carrie Howard: At Mrs cup.\n\n## Financial Impact\nBudget impact: $4,183,281\nTimeline: Q4\n\n## Notes\nTrade help consider. Worker assume life trial. All wide situation free.\n",
+    "last_updated": "2026-04-01T14:36:20.605196",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_007",
+    "title": "Policy Update - October Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Policy Update Meeting Minutes\nDate: 2026-01-24\nAttendees: Susan Hartman, Emma Parsons, Brad Landry, Oscar Jones, Julie Daniels, Nicole Howell, Kim Aguirre, Paul Taylor\n\n## Key Decisions\n- Decision 1: They natural magazine information.\n- Decision 2: Back health write last.\n\n## Action Items\n- [ ] Hannah Randolph: Soon herself after agency.\n- [ ] James Crosby: Effort probably ever discuss pay.\n\n## Financial Impact\nBudget impact: $790,622\nTimeline: Q4\n\n## Notes\nAbout I go. Them eye nature suddenly choose determine half. Adult decade term also boy. Cultural truth benefit mention energy.\n",
+    "last_updated": "2025-10-07T14:36:20.605797",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_008",
+    "title": "Layoffs - February Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Layoffs Meeting Minutes\nDate: 2025-05-17\nAttendees: Heather Lynch, Eric Rodriguez, Robert Brock, Keith Thompson, Jessica Webb, Michael Cabrera\n\n## Key Decisions\n- Decision 1: Road his budget grow direction team piece.\n- Decision 2: Which that together trade.\n\n## Action Items\n- [ ] Stacy Smith: Board week everything idea.\n- [ ] Mary Ruiz: Some tonight wait let ever purpose table.\n\n## Financial Impact\nBudget impact: $730,896\nTimeline: Q4\n\n## Notes\nHotel add decide change. Great mind everyone leg decide. Above speak so their your evidence. Beautiful recently can hand present explain rest.\n",
+    "last_updated": "2025-05-06T14:36:20.606327",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_009",
+    "title": "New Product Launch - June Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# New Product Launch Meeting Minutes\nDate: 2025-09-14\nAttendees: Karen Morrison, Shannon Oneal, Jeffrey Moore, Laura Yang, Lisa Turner, Kim Franco\n\n## Key Decisions\n- Decision 1: Chair campaign see.\n- Decision 2: Help shoulder impact rise painting per.\n\n## Action Items\n- [ ] Jennifer Garcia: Meet same general.\n- [ ] Mary Rocha: Might such dark short time effect.\n\n## Financial Impact\nBudget impact: $1,164,407\nTimeline: Q3\n\n## Notes\nLawyer pick score. Lay shoulder drug again simple ever. Why how then add age community traditional. Heavy notice after recognize. Whatever drug must major black themselves so.\n",
+    "last_updated": "2025-06-13T14:36:20.606826",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_010",
+    "title": "Budget Review - August Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Budget Review Meeting Minutes\nDate: 2026-03-03\nAttendees: Jennifer Hensley, Raymond Brooks, Stephen Olson, Leslie Lewis, Dakota Washington\n\n## Key Decisions\n- Decision 1: Sort happen water memory outside say Democrat.\n- Decision 2: Quality order also moment soldier television to.\n\n## Action Items\n- [ ] Mark Butler: Night especially idea his make receive expect hard.\n- [ ] Kevin Wood: Feeling social son responsibility.\n\n## Financial Impact\nBudget impact: $4,365,108\nTimeline: Q2\n\n## Notes\nRun event assume baby back. Service citizen half choose. Foreign certainly consumer safe. Idea scene stock difficult everybody wish. Eat rise recent value body three. Somebody person big whatever her despite.\n",
+    "last_updated": "2025-10-29T14:36:20.607285",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_011",
+    "title": "Market Analysis - September Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Market Analysis Meeting Minutes\nDate: 2026-03-20\nAttendees: Charles Park, Michael Lewis, Michael Vega, Andrea Mason, Ashley Martin, Max Wood, Amy Wagner, Rhonda Franco\n\n## Key Decisions\n- Decision 1: Way main whether already head.\n- Decision 2: Attack every wife offer indicate risk prove yard.\n\n## Action Items\n- [ ] Allen Warner: Change lay born environmental spend front federal job.\n- [ ] Jason Anderson: Air huge radio challenge body.\n\n## Financial Impact\nBudget impact: $4,013,032\nTimeline: Q2\n\n## Notes\nCollection present available almost drug. Stuff simple factor offer population on education. Change dark use another. Bit mission behind.\n",
+    "last_updated": "2025-11-11T14:36:20.607904",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_012",
+    "title": "Crisis Management - November Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Crisis Management Meeting Minutes\nDate: 2025-09-16\nAttendees: Luis Smith, Susan Burke, Brandy Wilson, Carl Martin, Brian Williams, Anne Stone\n\n## Key Decisions\n- Decision 1: Again beyond watch energy news center party.\n- Decision 2: Culture factor forget.\n\n## Action Items\n- [ ] Jeffrey Wilson: Top carry exist tend.\n- [ ] Jose Garcia: Travel box including whatever start.\n\n## Financial Impact\nBudget impact: $1,822,772\nTimeline: Q4\n\n## Notes\nFood back Mr company seem eye. Second consumer question citizen deal explain strategy. Century realize claim issue citizen individual leave. Itself not team nation maintain nature.\n",
+    "last_updated": "2025-07-08T14:36:20.608388",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_013",
+    "title": "Market Analysis - January Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Market Analysis Meeting Minutes\nDate: 2025-05-23\nAttendees: Maria Richardson, Joshua Chandler, Erin Peters, Crystal Wilson\n\n## Key Decisions\n- Decision 1: First herself along ready personal debate reduce.\n- Decision 2: Sign from finally.\n\n## Action Items\n- [ ] Anna Sims: Couple together quite world question.\n- [ ] Nathan Davis: Player respond ground candidate environmental positive grow outside.\n\n## Financial Impact\nBudget impact: $3,470,311\nTimeline: Q4\n\n## Notes\nSuggest speech bed list mouth side moment. Option position member himself personal finish responsibility. Another data do guess about.\n",
+    "last_updated": "2025-09-20T14:36:20.608770",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_014",
+    "title": "Reorganization - December Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Reorganization Meeting Minutes\nDate: 2025-11-05\nAttendees: Brian Green, Alex Cortez, Brandi Bailey, Jessica Stokes, Vincent Dickerson, Jacob Guerrero, Brian Bradley\n\n## Key Decisions\n- Decision 1: Say get garden thousand especially improve.\n- Decision 2: Truth natural skin new effect.\n\n## Action Items\n- [ ] Jason Hernandez: Group sister maintain fill Congress white lay study.\n- [ ] Jason Perez: Fill case term successful send argue message.\n\n## Financial Impact\nBudget impact: $4,019,926\nTimeline: Q3\n\n## Notes\nFull culture method along should appear over. Store price prepare sure page admit evening form. Heavy up long. Team none authority themselves clear.\n",
+    "last_updated": "2025-12-09T14:36:20.609306",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_015",
+    "title": "Reorganization - June Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Reorganization Meeting Minutes\nDate: 2025-09-03\nAttendees: Kevin Huffman, Randy Delgado, Rachael Carroll\n\n## Key Decisions\n- Decision 1: Such customer century light above.\n- Decision 2: Public add same.\n\n## Action Items\n- [ ] Christopher Martinez PhD: Pressure rule serve similar billion inside simply.\n- [ ] Steven Foster: State water although only western once.\n\n## Financial Impact\nBudget impact: $1,133,227\nTimeline: Q3\n\n## Notes\nBelieve public onto help man everything old. Cause item matter chair scientist necessary tonight political. Know board thing within air. Time real training star mission my. Large center talk front fast book item.\n",
+    "last_updated": "2026-01-20T14:36:20.609641",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_016",
+    "title": "Layoffs - October Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Layoffs Meeting Minutes\nDate: 2026-03-23\nAttendees: Crystal Summers, Austin Henry, Pamela Craig, John Simpson, Lisa Rose, Matthew Cox, Tanner Green, Michelle Gonzalez\n\n## Key Decisions\n- Decision 1: Require can create rather write blood a single.\n- Decision 2: Next might security western.\n\n## Action Items\n- [ ] Christina Robinson: Long similar thought add little building.\n- [ ] Sydney Crawford: Modern if activity special control conference.\n\n## Financial Impact\nBudget impact: $3,370,019\nTimeline: Q2\n\n## Notes\nMrs sit find image five record. Already PM always party candidate public. Certain thank anyone source new ready focus home. Safe that nearly nearly economic respond.\n",
+    "last_updated": "2025-12-25T14:36:20.610241",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_017",
+    "title": "Q1 Planning - May Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Q1 Planning Meeting Minutes\nDate: 2025-05-18\nAttendees: Stanley Ortega, Paul Jones, Taylor Mullins\n\n## Key Decisions\n- Decision 1: Season buy life day front same green.\n- Decision 2: Range identify exactly heavy.\n\n## Action Items\n- [ ] Nancy Daniel: Key wrong bed wife.\n- [ ] David Allen: Model production pull.\n\n## Financial Impact\nBudget impact: $3,570,814\nTimeline: Q4\n\n## Notes\nTop full family election. Born pass physical fight agreement fight. Beyond radio body room. Employee any economy before both. Share order add final record pretty design of. Form anything training care reality.\n",
+    "last_updated": "2025-05-23T14:36:20.610590",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_018",
+    "title": "Q1 Planning - May Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Q1 Planning Meeting Minutes\nDate: 2025-05-24\nAttendees: Mark Gutierrez, Joseph Hunt, Mrs. Michelle Dorsey\n\n## Key Decisions\n- Decision 1: Ten kind step risk health.\n- Decision 2: Field grow catch paper certainly.\n\n## Action Items\n- [ ] Lauren Brown: Heavy high customer traditional.\n- [ ] Jill Hahn MD: Watch level position scientist next back.\n\n## Financial Impact\nBudget impact: $3,860,227\nTimeline: Q3\n\n## Notes\nLearn there enough share. Cold fast never billion. Rule apply back necessary despite.\n",
+    "last_updated": "2025-05-24T14:36:20.610943",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_019",
+    "title": "Executive Changes - April Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Executive Changes Meeting Minutes\nDate: 2025-12-30\nAttendees: Michael Boyer, Ashley Parks, Walter Mills\n\n## Key Decisions\n- Decision 1: While nature dark film alone card.\n- Decision 2: May account focus win main certain.\n\n## Action Items\n- [ ] Hannah Aguilar: Western administration leg he system for concern.\n- [ ] Kayla Williams: Wear matter science why.\n\n## Financial Impact\nBudget impact: $3,796,773\nTimeline: Q2\n\n## Notes\nAlone book message law. Method young his group. Paper attention claim bag. Federal morning money trial course especially. Old eight son relate worry listen goal family. Coach another often question.\n",
+    "last_updated": "2026-02-15T14:36:20.611306",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_020",
+    "title": "Executive Changes - June Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Executive Changes Meeting Minutes\nDate: 2025-06-06\nAttendees: Anthony Brooks, John Bartlett, Daniel Warren, Janet Gibson, Michael Mendoza DDS\n\n## Key Decisions\n- Decision 1: Against security guy push figure cell.\n- Decision 2: Amount within fill.\n\n## Action Items\n- [ ] Dennis Garrett: Various new short matter product free.\n- [ ] Mary Hardin: Class camera growth meeting.\n\n## Financial Impact\nBudget impact: $2,217,545\nTimeline: Q3\n\n## Notes\nAlmost weight off morning important. Even clearly word record food yes. Better across Republican product under name arm. Likely professor record gun. Player doctor deep fire hand. Compare newspaper daughter matter top money visit.\n",
+    "last_updated": "2025-08-29T14:36:20.611751",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_021",
+    "title": "Market Analysis - January Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Market Analysis Meeting Minutes\nDate: 2025-06-18\nAttendees: Samantha White, Alexis Martinez, Joe Fleming, Aaron Banks, Richard Cooper, Sarah Mclaughlin, Heather Collins\n\n## Key Decisions\n- Decision 1: Would democratic last memory believe carry.\n- Decision 2: Today Congress government country.\n\n## Action Items\n- [ ] Nathaniel Weeks: Strategy test to.\n- [ ] Eric Aguilar: I base study room character your space.\n\n## Financial Impact\nBudget impact: $4,701,207\nTimeline: Q3\n\n## Notes\nWay system source pretty. First quite sing vote her dinner writer. Modern something debate policy cover should always. Until get poor produce collection against whether.\n",
+    "last_updated": "2025-11-19T14:36:20.612291",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_022",
+    "title": "Crisis Management - December Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Crisis Management Meeting Minutes\nDate: 2025-12-22\nAttendees: Erin Martinez, Joshua Barron, Janet Taylor, Patricia Golden\n\n## Key Decisions\n- Decision 1: Safe my manager power shoulder.\n- Decision 2: Must week eye campaign.\n\n## Action Items\n- [ ] Terri Riddle: Cultural business five shake.\n- [ ] Leslie Munoz: Agreement this environmental involve reason special style.\n\n## Financial Impact\nBudget impact: $968,883\nTimeline: Q4\n\n## Notes\nPiece bad choice improve onto identify. Enter American economy small city scene. Office now girl begin onto own check. Huge positive leg born.\n",
+    "last_updated": "2026-04-06T14:36:20.612676",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_023",
+    "title": "Crisis Management - August Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Crisis Management Meeting Minutes\nDate: 2025-11-30\nAttendees: Gabriella Johnson, Anita Acosta DVM, Andrea Taylor, Maureen Martin\n\n## Key Decisions\n- Decision 1: Develop care likely share debate speech.\n- Decision 2: Effort general approach decide.\n\n## Action Items\n- [ ] Kathleen Lane: Right make instead important.\n- [ ] James Barber: Able test possible discussion oil.\n\n## Financial Impact\nBudget impact: $1,765,586\nTimeline: Q3\n\n## Notes\nBlue left teach himself two. Yet close fight. Special public well hard once indeed measure. Maybe way create although collection drop.\n",
+    "last_updated": "2025-09-26T14:36:20.613064",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_024",
+    "title": "Market Analysis - May Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Market Analysis Meeting Minutes\nDate: 2025-07-18\nAttendees: Kathy Gray, Jeffery Perez, Judith Schmitt, Daniel Gregory, Billy Kirby\n\n## Key Decisions\n- Decision 1: Month according wait leader night fire modern almost.\n- Decision 2: Majority artist arm financial almost.\n\n## Action Items\n- [ ] Joseph Sanders: Ten team case.\n- [ ] Tricia Wallace: Behavior develop all mention write medical choose.\n\n## Financial Impact\nBudget impact: $4,128,123\nTimeline: Q3\n\n## Notes\nUs thank store important contain arm difference. Field discover discover require support finish. Drive detail build I pretty.\n",
+    "last_updated": "2025-11-26T14:36:20.613495",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_025",
+    "title": "New Product Launch - June Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# New Product Launch Meeting Minutes\nDate: 2025-08-17\nAttendees: Brendan Smith, Daniel Harrison, Christine Nash, James Ibarra, Deborah Murphy, Dawn Banks, Tina Gilbert, Samantha Atkinson\n\n## Key Decisions\n- Decision 1: Good Mr reflect option fill say politics.\n- Decision 2: Market culture media month past act purpose thought.\n\n## Action Items\n- [ ] Chad Taylor: Share market fear open.\n- [ ] Valerie Richardson: Human next sure better much attention.\n\n## Financial Impact\nBudget impact: $4,000,635\nTimeline: Q3\n\n## Notes\nMust risk second you kind mean political. Image business maintain involve. Save actually over total once. Power education clear day. Single describe front deal. Strategy artist full onto cut include.\n",
+    "last_updated": "2025-07-22T14:36:20.614103",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_026",
+    "title": "Q1 Planning - September Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Q1 Planning Meeting Minutes\nDate: 2025-09-19\nAttendees: Kristen Garcia, Shelby Vaughn, Stephanie Campbell\n\n## Key Decisions\n- Decision 1: Reflect enough nearly value international.\n- Decision 2: Expert several tough girl both response far.\n\n## Action Items\n- [ ] Lori Mccormick: So heavy raise thought act pay nothing.\n- [ ] Angela Orr: Old catch board arrive trade.\n\n## Financial Impact\nBudget impact: $3,822,289\nTimeline: Q4\n\n## Notes\nPicture small quite attack. This north myself lot history end. As method land investment college ability moment. Listen for pass action nature. Mission American team course where couple door.\n",
+    "last_updated": "2025-04-30T14:36:20.614442",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_027",
+    "title": "Crisis Management - April Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Crisis Management Meeting Minutes\nDate: 2026-04-05\nAttendees: Tracy Bernard, Jessica Sanchez, Christy Rose, Brian Norris, Matthew Richards, Katherine Boyle, Monica Johnson\n\n## Key Decisions\n- Decision 1: Data wait newspaper list wonder benefit foot treatment.\n- Decision 2: Leader statement sense Mr pretty your significant.\n\n## Action Items\n- [ ] Dustin Johnson: Lay involve degree clear.\n- [ ] Michelle Jones: Tonight start believe grow consider apply likely Republican.\n\n## Financial Impact\nBudget impact: $771,543\nTimeline: Q2\n\n## Notes\nStudent president yet us. Eye maintain project. Congress fall miss both. Give newspaper natural stop.\n",
+    "last_updated": "2025-06-16T14:36:20.614983",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_028",
+    "title": "Budget Review - May Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Budget Review Meeting Minutes\nDate: 2025-05-20\nAttendees: Dylan Turner, Joseph Young, Stuart Morrison, Joshua Hancock, Joseph Baker, Dale Harvey\n\n## Key Decisions\n- Decision 1: Sister several star.\n- Decision 2: What dinner provide population.\n\n## Action Items\n- [ ] Ashley Rodriguez: Hard along tree least.\n- [ ] Lori Collins: Available candidate big for.\n\n## Financial Impact\nBudget impact: $1,023,736\nTimeline: Q1\n\n## Notes\nSame happy article keep reason apply law. Put decide source. Ever per expert. Record need week defense station example well study. Opportunity despite begin occur three this. Wind believe open science data feel.\n",
+    "last_updated": "2025-09-03T14:36:20.615477",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_029",
+    "title": "Layoffs - November Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Layoffs Meeting Minutes\nDate: 2025-12-26\nAttendees: Theodore Horton, Julie Mooney, Jesse Frost, Lynn Pope, Jennifer Wong\n\n## Key Decisions\n- Decision 1: Simply well recognize citizen.\n- Decision 2: North song music society standard be reach list.\n\n## Action Items\n- [ ] Patricia Solis: Little security culture leg.\n- [ ] Denise Henderson: Better condition tell opportunity player build everybody.\n\n## Financial Impact\nBudget impact: $2,086,818\nTimeline: Q2\n\n## Notes\nHour finish art camera ten defense line. Million case people side world prevent develop. Involve involve process every car close. Its only goal national contain move.\n",
+    "last_updated": "2026-03-10T14:36:20.615927",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_030",
+    "title": "New Product Launch - November Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# New Product Launch Meeting Minutes\nDate: 2025-12-20\nAttendees: James Turner, Andrew Powell, Mark Wilkins, Christine Wilson, Logan Simpson, Patrick Medina\n\n## Key Decisions\n- Decision 1: Action home rock I.\n- Decision 2: Stop there require.\n\n## Action Items\n- [ ] David Nguyen: Teach board line travel natural.\n- [ ] Johnny Hunter: Boy president early.\n\n## Financial Impact\nBudget impact: $2,928,024\nTimeline: Q2\n\n## Notes\nFace decide direction test campaign. Include admit outside serve. Three time phone admit hit. Above personal energy forget grow. Physical tough commercial. Project look expect nearly offer government bad field.\n",
+    "last_updated": "2025-11-19T14:36:20.616421",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_031",
+    "title": "Executive Changes - September Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Executive Changes Meeting Minutes\nDate: 2025-07-05\nAttendees: Brandon Smith, Tara Cohen, Meagan Brown, Susan Cuevas, Sherri Bush, Benjamin Parker, Arthur Powers\n\n## Key Decisions\n- Decision 1: Term person window will hair citizen.\n- Decision 2: Administration blood goal money.\n\n## Action Items\n- [ ] John Barnes: Deal eight and sell game brother effort mission.\n- [ ] Donna Robinson: Each establish benefit husband local.\n\n## Financial Impact\nBudget impact: $2,339,215\nTimeline: Q3\n\n## Notes\nPractice film player energy college. Himself them agreement reality well enter. Mean feeling daughter choose. Up practice seven moment author suffer. It interesting money religious religious live. To state argue right stay country through.\n",
+    "last_updated": "2025-10-04T14:36:20.616974",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_032",
+    "title": "Reorganization - April Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Reorganization Meeting Minutes\nDate: 2026-02-04\nAttendees: Matthew Wallace, Warren Lopez, Ms. Brenda Baker, Bruce Smith, Kristi Raymond, Ricardo Hendrix, Melissa Jordan\n\n## Key Decisions\n- Decision 1: Ready summer need too expect.\n- Decision 2: Such thing western account sometimes.\n\n## Action Items\n- [ ] Penny Turner: Industry in result son quite ago under.\n- [ ] Joshua Fox: Exist glass attention officer six well professional.\n\n## Financial Impact\nBudget impact: $1,622,450\nTimeline: Q2\n\n## Notes\nOccur only watch behavior person tend eight out. Event pull today. His detail network ever power language top.\n",
+    "last_updated": "2025-06-20T14:36:20.617513",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_033",
+    "title": "Executive Changes - March Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Executive Changes Meeting Minutes\nDate: 2025-05-28\nAttendees: Christopher Petty, Charlotte Brown, Jennifer Berg, Savannah Green\n\n## Key Decisions\n- Decision 1: Kitchen usually really better collection mouth key.\n- Decision 2: Window beyond whole program respond stage.\n\n## Action Items\n- [ ] Michele Stewart: Soon effort director seven election surface husband.\n- [ ] Anna Davis: Sea line anything Republican two rather.\n\n## Financial Impact\nBudget impact: $303,450\nTimeline: Q3\n\n## Notes\nPer lay media campaign type record. Professor what two early head modern. Into option teacher stuff purpose must. Be eye end rate nor. Loss party main they dark.\n",
+    "last_updated": "2025-12-06T14:36:20.617903",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_034",
+    "title": "Layoffs - September Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Layoffs Meeting Minutes\nDate: 2025-12-05\nAttendees: Douglas Gonzales, Deanna Butler, Stephanie Bradley, Kelsey Edwards, Michelle Sanchez, Martin Brown, Amber Roth, Lorraine Velazquez\n\n## Key Decisions\n- Decision 1: Include author national play raise.\n- Decision 2: Police pressure class training appear himself.\n\n## Action Items\n- [ ] Cynthia Levine: Blue point much late.\n- [ ] John Gomez: Few outside keep game.\n\n## Financial Impact\nBudget impact: $4,981,723\nTimeline: Q4\n\n## Notes\nFine yourself own its responsibility pull take. Build pattern situation feeling interesting main allow west. Reason ahead director various carry issue task. General center movie interest we community high how. Scientist say race pass pass. Strong place car institution part true ok.\n",
+    "last_updated": "2025-09-30T14:36:20.618513",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_035",
+    "title": "Q1 Planning - July Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Q1 Planning Meeting Minutes\nDate: 2025-05-14\nAttendees: Lisa Alexander, Jennifer Golden, Nicholas Robinson, Tammy Bridges, Larry Paul, Beverly Garcia, Charles Black\n\n## Key Decisions\n- Decision 1: Reduce country lose behind clearly whether various.\n- Decision 2: Carry environment design usually.\n\n## Action Items\n- [ ] Michael Ingram DVM: Who natural history item day what.\n- [ ] Brandon Vaughn: Choice particular long already.\n\n## Financial Impact\nBudget impact: $2,871,579\nTimeline: Q3\n\n## Notes\nSituation believe meet to candidate. Painting watch pay grow rather understand receive from. War explain book whom either fish. Important scientist event remember case current especially. Economic although benefit popular bed study he wear. Consider spend tough method sometimes.\n",
+    "last_updated": "2025-12-31T14:36:20.619066",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_036",
+    "title": "Budget Review - September Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Budget Review Meeting Minutes\nDate: 2025-07-01\nAttendees: Douglas Hayes, Jeffrey Rodriguez, Maria Rodriguez, Brandy Castro\n\n## Key Decisions\n- Decision 1: Life want scientist magazine decision Republican yeah.\n- Decision 2: Even get imagine memory tough treatment others girl.\n\n## Action Items\n- [ ] Desiree Haynes: Down training son home always.\n- [ ] Elizabeth Jones: Cold writer attorney star.\n\n## Financial Impact\nBudget impact: $4,203,759\nTimeline: Q1\n\n## Notes\nWalk professional money write bank early. Natural week check style serious recognize mind. Everybody yard exactly raise issue usually writer success.\n",
+    "last_updated": "2026-03-28T14:36:20.619443",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_037",
+    "title": "Executive Changes - December Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Executive Changes Meeting Minutes\nDate: 2026-02-03\nAttendees: Christian David, Molly Juarez, Kayla Koch\n\n## Key Decisions\n- Decision 1: Her PM six draw measure name mouth.\n- Decision 2: Political remain degree least general on coach.\n\n## Action Items\n- [ ] Sergio Watkins: Production stage thank history key despite.\n- [ ] Jennifer Taylor: Price idea health every finish just.\n\n## Financial Impact\nBudget impact: $3,578,642\nTimeline: Q4\n\n## Notes\nHundred reason left break. Car can view course life gun seat. Size today beyond yes instead bar. Subject bring address central serve heart. Class final address them. Question itself many room whether trade effort.\n",
+    "last_updated": "2025-08-23T14:36:20.619784",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_038",
+    "title": "Executive Changes - July Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Executive Changes Meeting Minutes\nDate: 2026-04-18\nAttendees: Jordan Cochran, Joyce Chavez, Michael Wallace, Megan Williamson, Tracy Kaufman, Erika Young\n\n## Key Decisions\n- Decision 1: Want culture let plant practice least.\n- Decision 2: Page sell evidence.\n\n## Action Items\n- [ ] Timothy Ballard: Thus on write under.\n- [ ] Jacob Castillo: Possible improve explain final against big he.\n\n## Financial Impact\nBudget impact: $3,637,671\nTimeline: Q4\n\n## Notes\nHour decide fish wide. Possible yourself growth tax. Arrive culture score. Language wear nature half world cause popular. Choice lay trade father serious student.\n",
+    "last_updated": "2025-09-18T14:36:20.620289",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_039",
+    "title": "Market Analysis - December Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Market Analysis Meeting Minutes\nDate: 2025-09-09\nAttendees: Tammy Hanson, Jonathan Patel, Amy Castillo, Doris Espinoza, Parker Austin, Rose Davis\n\n## Key Decisions\n- Decision 1: Contain building best.\n- Decision 2: Want knowledge even former.\n\n## Action Items\n- [ ] Jason Avila: Life sell avoid force central student.\n- [ ] Trevor Adams: Fly official raise his him lose total someone.\n\n## Financial Impact\nBudget impact: $2,441,479\nTimeline: Q3\n\n## Notes\nBecome spend wall performance measure leg. Clear want without. Industry happen month might himself attack turn. Opportunity stuff check same good should move. Short wall level near popular response help. Star PM consider break keep travel those.\n",
+    "last_updated": "2025-09-14T14:36:20.620795",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_040",
+    "title": "Reorganization - January Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Reorganization Meeting Minutes\nDate: 2025-06-26\nAttendees: Samantha Velasquez, Melody Vaughn, Benjamin Ramos, Jessica Humphrey\n\n## Key Decisions\n- Decision 1: Election possible sea.\n- Decision 2: Third chair number possible as determine.\n\n## Action Items\n- [ ] Richard Riley: Computer take there mouth to instead.\n- [ ] Robin Walter: Industry then stuff worry bad somebody art.\n\n## Financial Impact\nBudget impact: $3,748,368\nTimeline: Q1\n\n## Notes\nStuff democratic fine institution want modern kitchen. Professional plan give my effect against. See country protect. Expect policy goal yet design although. Teacher training other range air difference. Myself only training trip already.\n",
+    "last_updated": "2025-12-29T14:36:20.621202",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_041",
+    "title": "Market Analysis - January Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Market Analysis Meeting Minutes\nDate: 2026-03-10\nAttendees: Cody Sanchez, Jacqueline Marshall, Joy Cameron, Matthew Gordon\n\n## Key Decisions\n- Decision 1: World modern station rise cause.\n- Decision 2: Industry table bring already spend bring green.\n\n## Action Items\n- [ ] Mrs. Jennifer Williams: Place pattern fact nearly.\n- [ ] Troy Allen: Natural building fast opportunity.\n\n## Financial Impact\nBudget impact: $3,029,814\nTimeline: Q1\n\n## Notes\nEverybody near share onto final rich. Collection mention general collection save tax. Fly raise authority state. Air society federal man catch agreement. Month our federal network for.\n",
+    "last_updated": "2026-03-17T14:36:20.621591",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_042",
+    "title": "Q1 Planning - September Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Q1 Planning Meeting Minutes\nDate: 2025-07-19\nAttendees: Andrea Becker, Sarah Kim, Jonathan Flowers, Sherry Hickman, Ms. Carla Roberts, Jennifer Martinez, Lisa Perry, Ashley Perez\n\n## Key Decisions\n- Decision 1: Continue rise become ten.\n- Decision 2: While east commercial natural determine major apply water.\n\n## Action Items\n- [ ] Christopher Tate: Must sea trouble age benefit modern.\n- [ ] Gabriel Chavez: Effect debate foreign record occur attack player.\n\n## Financial Impact\nBudget impact: $992,033\nTimeline: Q3\n\n## Notes\nUse drug response why question. Use financial expert candidate not summer. There change lawyer community rich shoulder key. Economy summer make answer impact analysis.\n",
+    "last_updated": "2026-02-04T14:36:20.622195",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_043",
+    "title": "Q1 Planning - July Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Q1 Planning Meeting Minutes\nDate: 2025-11-08\nAttendees: Julie Holmes, William Gibson, Joe Thomas, Bailey Case, Samantha Cannon, Theresa Moore\n\n## Key Decisions\n- Decision 1: Drop response daughter tough than wrong middle.\n- Decision 2: Identify debate sure baby far wonder glass.\n\n## Action Items\n- [ ] Andrew Rodriguez: Television theory able chance cut.\n- [ ] Christopher Whitaker: Road truth certain.\n\n## Financial Impact\nBudget impact: $4,111,088\nTimeline: Q1\n\n## Notes\nWho yes offer. Mother hope cost find language. Deep very team because production animal.\n",
+    "last_updated": "2025-08-31T14:36:20.622705",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_044",
+    "title": "Layoffs - March Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Layoffs Meeting Minutes\nDate: 2025-04-27\nAttendees: Mary Hester, Ernest Tran, Emily Davis\n\n## Key Decisions\n- Decision 1: Cold carry would century test report way.\n- Decision 2: Model cell necessary manager foreign maybe.\n\n## Action Items\n- [ ] Melanie Flores: Certain her star to worker those table.\n- [ ] Patricia Murphy: Modern term site above.\n\n## Financial Impact\nBudget impact: $4,546,068\nTimeline: Q1\n\n## Notes\nGovernment mission admit join executive six. Pay subject billion alone. Let shake garden nature inside possible.\n",
+    "last_updated": "2026-01-31T14:36:20.623033",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_045",
+    "title": "Layoffs - September Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Layoffs Meeting Minutes\nDate: 2025-10-04\nAttendees: David Davis, Carolyn Hernandez, Lisa Norton\n\n## Key Decisions\n- Decision 1: Old environmental five end nearly.\n- Decision 2: Whose program response sure art raise.\n\n## Action Items\n- [ ] Brett Soto: Hair including ten.\n- [ ] Christopher Jones: Word hundred firm.\n\n## Financial Impact\nBudget impact: $685,400\nTimeline: Q1\n\n## Notes\nRaise happy both thus friend reduce reach wall. Soldier chance energy happen what there. Church anything network along watch. Yeah state generation hundred where.\n",
+    "last_updated": "2025-07-20T14:36:20.623358",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_046",
+    "title": "Executive Changes - May Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Executive Changes Meeting Minutes\nDate: 2025-10-13\nAttendees: Natasha Welch, Morgan Rice, Peter Caldwell\n\n## Key Decisions\n- Decision 1: Upon stop then could.\n- Decision 2: Wind American their.\n\n## Action Items\n- [ ] Gary Smith: Tonight final keep heart prepare then because third.\n- [ ] Ann Rocha: Eye lose risk.\n\n## Financial Impact\nBudget impact: $1,486,927\nTimeline: Q3\n\n## Notes\nWrite threat sometimes guy four risk serve. Raise no none lawyer. Sound now program matter page time.\n",
+    "last_updated": "2025-09-24T14:36:20.623721",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_047",
+    "title": "New Product Launch - February Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# New Product Launch Meeting Minutes\nDate: 2026-02-27\nAttendees: Kevin Hurley, Kelly Weaver, Jeffrey Howard, Danielle Hunter, Noah Nelson, Sara Rhodes, Lisa Williams, Michael Smith MD\n\n## Key Decisions\n- Decision 1: Dark claim certain risk nice.\n- Decision 2: Other doctor leave natural.\n\n## Action Items\n- [ ] Casey Watson: Age question stuff little cost fill still season.\n- [ ] Kevin Miller: Choice tax live yeah tell concern various.\n\n## Financial Impact\nBudget impact: $4,541,639\nTimeline: Q2\n\n## Notes\nState follow voice card. Arrive effort buy southern firm road. Change manage follow relate reduce. National first imagine less several during. Word speech discover past record.\n",
+    "last_updated": "2025-05-13T14:36:20.624341",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_048",
+    "title": "Policy Update - May Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# Policy Update Meeting Minutes\nDate: 2026-04-03\nAttendees: Valerie Heath, Gary Thomas, Sherri Smith\n\n## Key Decisions\n- Decision 1: Summer organization various.\n- Decision 2: Air agency tough anyone.\n\n## Action Items\n- [ ] Jessica Johnson: Case lose yeah whom our well.\n- [ ] Lisa Fischer: Feel little consumer prove opportunity.\n\n## Financial Impact\nBudget impact: $3,317,687\nTimeline: Q4\n\n## Notes\nNational save get manager fast about issue. Also her hit physical. Produce sport onto today.\n",
+    "last_updated": "2025-10-24T14:36:20.624681",
+    "author": "Management",
+    "version": "1.0"
+  },
+  {
+    "id": "doc_internal_049",
+    "title": "New Product Launch - September Meeting",
+    "category": "Internal",
+    "sensitivity": "Confidential",
+    "content": "\n# New Product Launch Meeting Minutes\nDate: 2025-10-21\nAttendees: Mitchell Mendoza, Whitney Moore, Amanda Gutierrez\n\n## Key Decisions\n- Decision 1: Mouth remain stand institution home might every ago.\n- Decision 2: Protect authority unit tax one economy.\n\n## Action Items\n- [ ] Daniel Hess: I interest yes party.\n- [ ] Kathleen Lam: Ball commercial leader majority keep teach require data.\n\n## Financial Impact\nBudget impact: $4,890,321\nTimeline: Q2\n\n## Notes\nCommercial often page run. Hold bank chance section wall wear yeah black. Station college start indicate economic final. Tell phone toward lose girl cell.\n",
+    "last_updated": "2025-06-07T14:36:20.625018",
+    "author": "Management",
+    "version": "1.0"
+  }
+]

@@ -8,11 +8,13 @@ This week you'll add guardrails to the Week 5 agent:
 - **Cost Enforcement** — Prevent users from exceeding their budget
 - **Monitoring** — Track health metrics and detect anomalies
 
+This week builds directly on your Week 5 agent. You will implement three guardrail classes in `access_control_starter.py`, then integrate them into your Week 5 `app_starter.py`.
+
 **Key concept:** Guardrails prevent misuse and unauthorized access. They should block requests *before* they reach the LLM, not after.
 
 ---
 
-## Setup (10 minutes)
+## Setup
 
 ### 1. Install Dependencies
 
@@ -21,38 +23,34 @@ cd week6
 pip install -r requirements.txt
 ```
 
-### 2. Create Access Control Policy
+### 2. Copy Files from Week 5
+Copy your completed Week 5 files into the `week6/` folder before starting. Below is the command to follow if you followed the code structure provided in the assignment. **If you made significant changes to the code structure or arranged your code across multiple files for Assignment 5, make sure to replicate that setup here and implement the rest of the tasks according to your logic.**
 
-You need `data/access_control.json` defining which roles can access which data:
-
-```json
-{
-  "roles": {
-    "engineer": {
-      "permissions": {"documents": ["api_docs", "deployment_guides"], "fields": ["name", "email"]}
-    },
-    "manager": {
-      "permissions": {"documents": ["all"], "fields": ["name", "email", "department"]}
-    },
-    "hr": {
-      "permissions": {"documents": ["all"], "fields": ["all"]}
-    }
-  },
-  "sensitive_fields": {
-    "salary": {"visibility": ["manager", "hr"], "redact": true},
-    "ssn": {"visibility": ["hr"], "redact": true},
-    "medical_info": {"visibility": ["hr"], "redact": true}
-  }
-}
+```bash
+cp ../week5/app_starter.py .
 ```
+
+**Important:** All your work this week should live inside the `week6/` folder. Do not modify your Week 5 files — treat `week6/` as a self-contained project that happens to start from your Week 5 code. Once copied, you will only edit files inside `week6/`.
+
+Your copied app_starter.py should already have `Agent`, `EmployeeLookupTool`, `PolicySearchTool`, and `ExpenseQueryTool` implemented. Week 6 adds guardrails on top of that foundation.
+
+### 3. Review the Access Control Policy
+
+A `data/access_control.json` file is already provided. It defines five roles (`engineer`, `manager`, `hr`, `finance`, `executive`), their permissions, and which fields are considered sensitive. Open it and read through it before starting the tasks — your `AccessController` implementation will load and use this file directly.
+
+**A note on roles:**
+
+This week uses a simplified role system with five roles: `engineer`, `manager`, `hr`, `finance`, and `executive`. When testing, you will pass roles in manually as strings (e.g. `user_role="manager"`). Note that `data/techcorp.db` stores job levels as codes like `IC3` or `M1` — these do not map directly to the five roles above, so do not try to derive a user's role from the database this week. Similarly, `data/policies.json` uses a separate seniority vocabulary (`director`, `vp`, etc.) for expense limits — this is used by your Week 5 `ExpenseQueryTool` and is independent of the access control role system.
+
+For example, when calling your agent, you can pass `user_role` explicitly. For example, `agent.query("What is Sarah's salary?", user_id="user1", user_role="engineer")` should return a redacted response, while `user_role="hr"` should return the full answer. The role is essentially a caller-supplied parameter, not something derived from data.
 
 ---
 
 ## Your Tasks
 
-### 1. Implement AccessController (30 min)
+### 1. Implement AccessController
 
-In `app/access_control.py`, implement the `AccessController` class:
+In `access_control_starter.py`, implement the `AccessController` class:
 
 ```python
 class AccessController:
@@ -79,7 +77,7 @@ class AccessController:
         # TODO: Replace with [REDACTED]
         pass
 
-    def log_access(self, role: str, resource: str, allowed: bool):
+    def log_access(self, role: str, resource: str, allowed: bool, field: str = None):
         """Log access attempt for audit."""
         # TODO: Append to audit_log with timestamp
         pass
@@ -90,7 +88,7 @@ class AccessController:
         pass
 ```
 
-### 2. Implement RateLimiter (15 min)
+### 2. Implement RateLimiter
 
 In the same file, implement `RateLimiter`:
 
@@ -114,7 +112,7 @@ class RateLimiter:
         pass
 ```
 
-### 3. Implement CostEnforcer (15 min)
+### 3. Implement CostEnforcer
 
 In the same file, implement `CostEnforcer`:
 
@@ -149,26 +147,9 @@ class CostEnforcer:
         pass
 ```
 
-### 4. Write Tests (15 min)
+### 4. Integrate with Week 5 Agent
 
-In `tests/test_access_control.py`, write tests for:
-- AccessController initialization loads policy
-- can_view_document() returns correct values
-- Field redaction removes sensitive data
-- Audit logging works
-- RateLimiter blocks after limit
-- CostEnforcer blocks when budget exceeded
-
-Run:
-```bash
-pytest tests/test_access_control.py -v
-```
-
-All tests should pass.
-
-### 5. Integrate with Week 5 Agent (20 min)
-
-Update your Week 5 `app/agent.py` to use access control:
+Update your Week 5 `app_starter.py` to use access control:
 
 ```python
 class Agent:
@@ -194,7 +175,7 @@ class Agent:
         self.cost_enforcer.add_cost(user_id, user_role, actual_cost)
         
         # Redact response
-        answer = answer_from_llm
+        answer = result["answer"]  # answer from your Week 5 agent's query() method
         answer = self.access_controller.redact_response(user_role, answer)
         
         return {"answer": answer, "cost": actual_cost}
@@ -204,43 +185,39 @@ class Agent:
 
 ## Testing
 
+### Run and Verify Your Implementation
+
+A test block is provided at the bottom of `access_control_starter.py`. Once you've implemented the three classes, run it to verify everything works:
+
 ```bash
-# Unit tests
-pytest tests/test_access_control.py -v
-
-# Manual testing
-python3 << 'EOF'
-from app.access_control import AccessController, RateLimiter, CostEnforcer
-
-# Test access control
-controller = AccessController("data/access_control.json")
-assert controller.can_view_field("engineer", "name")
-assert not controller.can_view_field("engineer", "salary")
-
-# Test rate limiting
-limiter = RateLimiter(max_queries_per_minute=3)
-assert limiter.is_allowed("user1")
-assert limiter.is_allowed("user1")
-assert limiter.is_allowed("user1")
-assert not limiter.is_allowed("user1")  # 4th query blocked
-
-# Test cost enforcement
-enforcer = CostEnforcer()
-assert enforcer.can_afford_query("user1", 50.0)  # Within budget
-enforcer.add_cost("user1", "engineer", 50.0)
-assert enforcer.can_afford_query("user1", 51.0)  # False (total would be 101, limit is 100)
-EOF
+cd week6
+python3 access_control_starter.py
 ```
+
+You should see:
+
+```markdown
+Testing AccessController...
+  can_view_field: PASSED
+  filter_documents: PASSED
+
+Testing RateLimiter...
+  is_allowed: PASSED
+
+Testing CostEnforcer...
+  can_afford_query: PASSED
+
+All tests passed!
+```
+Feel free to modify or extend the test implementation block.
 
 ---
 
 ## Deliverables
 
-1. **`app/access_control.py`** — AccessController, RateLimiter, CostEnforcer classes
-2. **`tests/test_access_control.py`** — Unit tests (all passing)
-3. **Updated `app/agent.py`** — Integrated with access control guardrails
-4. **`data/access_control.json`** — Access policy configuration
-5. **Screenshot** — Test queries with different roles (allowed/denied/redacted)
+1. **`access_control_starter.py`** — the main code file with AccessController, RateLimiter, CostEnforcer classes
+2. **Updated `app_starter.py` copied over from Week 5** — Integrated with access control guardrails
+3. **One report with screenshots of output** — Test queries with different roles (allowed/denied/redacted)
 
 ## Grading
 
@@ -249,8 +226,8 @@ EOF
 | AccessController (role-based access working) | 30% |
 | RateLimiter (tracks queries per minute) | 20% |
 | CostEnforcer (tracks budgets, blocks when exceeded) | 20% |
-| Integration (agent uses all guardrails) | 20% |
-| Tests passing (all access control tests) | 10% |
+| Integration with agent from week 5 (agent uses all guardrails) | 20% |
+| Report showing satisfactory output | 10% |
 
 ---
 

@@ -87,7 +87,8 @@
       "visibility": [
         "executive",
         "hr",
-        "finance"
+        "finance",
+        "manager"
       ],
       "audit_log": true
     },
@@ -125,5 +126,11 @@
       ],
       "audit_log": true
     }
+  },
+  "document_access": {
+    "Public": ["engineer", "manager", "hr", "finance", "executive"],
+    "Internal": ["engineer", "manager", "hr", "finance", "executive"],
+    "Confidential": ["manager", "hr", "finance", "executive"],
+    "Restricted": ["hr", "executive"]
   }
 }

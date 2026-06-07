@@ -2,34 +2,6 @@
 
 ## Common Issues
 
-### AccessController Initialization Fails
-**Error:** `FileNotFoundError: data/access_control.json not found`
-
-**Solution:**
-- Create `data/access_control.json` with proper structure:
-  ```json
-  {
-    "roles": {
-      "engineer": {"permissions": {...}},
-      "manager": {"permissions": {...}}
-    },
-    "sensitive_fields": {
-      "salary": {"visibility": ["manager", "hr"], "redact": true},
-      "ssn": {"visibility": ["hr"], "redact": true}
-    }
-  }
-  ```
-- See `week6-implemented/data/access_control.json` for example
-
-### Rate Limiter Not Working
-**Error:** Rate limit tests pass locally but not in production
-
-**Solution:**
-- Rate limiter tracks per-minute queries in memory
-- In distributed systems, this doesn't work across multiple pods
-- For production: use Redis-backed rate limiting
-- For now (learning): use in-memory is fine for single-instance deployment
-
 ### Cost Enforcer Always Returns True
 **Error:** `can_afford_query()` always returns True even when budget exceeded
 
@@ -59,59 +31,14 @@
   ```
 
 ### Audit Log Growing Too Large
-**Error:** `audit_log_size_mb()` returns huge number
+**Issue:** Audit log list grows very large with many queries
 
 **Solution:**
-- Audit logs can grow quickly with many queries
-- Implement log rotation:
-  ```python
-  if controller.audit_log_size_mb() > 10:  # 10 MB threshold
-      # Archive old logs
-      archive_logs(controller.audit_log)
-      controller.audit_log = []
-  ```
-- Or trim to recent entries:
-  ```python
+- Trim to recent entries periodically:
+```python
   if len(controller.audit_log) > 10000:
       controller.audit_log = controller.audit_log[-5000:]  # Keep last 5000
-  ```
-
-## Testing Issues
-
-### Test Fails: "missing data/access_control.json"
-**Solution:**
-```bash
-# Create minimal config for testing
-mkdir -p week6/data
-python3 << 'EOF'
-import json
-config = {
-    "roles": {
-        "engineer": {"permissions": {}},
-        "manager": {"permissions": {}}
-    },
-    "sensitive_fields": {
-        "salary": {"visibility": ["manager"], "redact": true}
-    }
-}
-with open('week6/data/access_control.json', 'w') as f:
-    json.dump(config, f)
-EOF
 ```
-
-### MonitoringMetrics Tests Fail
-**Solution:**
-- Verify PII detector regex patterns work:
-  ```python
-  from app.monitoring import PIIDetector
-  detector = PIIDetector()
-  
-  # Should detect SSN pattern XXX-XX-XXXX
-  assert detector.has_ssn("123-45-6789")
-  
-  # Should detect email
-  assert detector.has_email("user@example.com")
-  ```
 
 ## Performance Issues
 
@@ -136,27 +63,3 @@ EOF
       thread.daemon = True
       thread.start()
   ```
-
-## Deployment Issues
-
-### Access Control JSON Not Loaded in Container
-**Error:** Logs show "Failed to load access policy"
-
-**Solution:**
-- Verify JSON is copied into Docker image
-- In Dockerfile:
-  ```dockerfile
-  COPY data/access_control.json /app/data/access_control.json
-  ```
-- Check path is correct in app (should be relative to working directory)
-
-## FAQ
-
-**Q: Why track audit logs if they get huge?**
-A: For security/compliance. In production, ship logs to Cloud Logging or Datadog for long-term storage.
-
-**Q: Should cost limits be per-minute or per-day?**
-A: Start with per-day to avoid blocking legitimate users. Adjust based on usage patterns.
-
-**Q: How do I know if someone is trying to access data they shouldn't?**
-A: Check audit logs for pattern: same user_role, resource, allowed=False repeated many times = suspicious.

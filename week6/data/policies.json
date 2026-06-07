@@ -1,0 +1,45 @@
+{
+  "travel": {
+    "budget_limits": {
+      "domestic_flight_short": 3000,
+      "domestic_flight_long": 5000,
+      "international": 10000,
+      "hotel_tier1": 350,
+      "hotel_tier2": 250,
+      "hotel_tier3": 150,
+      "meal_breakfast": 15,
+      "meal_lunch": 20,
+      "meal_dinner": 50
+    },
+    "approval_levels": {
+      "under_500": "manager",
+      "500_2000": "director",
+      "2000_5000": "vp",
+      "over_5000": "cfo"
+    },
+    "policy_update": "2025-11-01"
+  },
+  "expense": {
+    "approval_limits": {
+      "ic1_ic2": 500,
+      "ic3": 2000,
+      "manager": 5000,
+      "director": 25000,
+      "vp": 100000
+    },
+    "submission_deadline_days": 30,
+    "receipt_required_above": 25
+  },
+  "pto": {
+    "default_days": 15,
+    "manager_days": 20,
+    "executive_days": 25,
+    "sick_days": 10,
+    "rollover": false
+  },
+  "compensation": {
+    "bonus_review_date": "2025-12-15",
+    "salary_review_date": "2025-03-01",
+    "stock_refresh_date": "2025-01-15"
+  }
+}
