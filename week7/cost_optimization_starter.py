@@ -20,6 +20,7 @@ logger = logging.getLogger(__name__)
 # TASK 1: Implement CostAnalyzer
 # ============================================================================
 
+
 class CostAnalyzer:
     """Analyze and track query costs by component."""
 
@@ -65,7 +66,7 @@ class CostAnalyzer:
             "tool_total": 0.0,
             "error_total": 0.0,
             "total_daily": 0.0,
-            "query_count": 0
+            "query_count": 0,
         }
 
     def identify_cost_spikes(self) -> List[Dict]:
@@ -83,6 +84,7 @@ class CostAnalyzer:
 # ============================================================================
 # TASK 2: Implement OptimizationStrategy
 # ============================================================================
+
 
 class OptimizationStrategy:
     """Optimize agent costs through multiple strategies."""
@@ -173,13 +175,14 @@ class OptimizationStrategy:
         return {
             "total_savings_pct": 0.0,
             "strategies_applied": self.strategies_applied,
-            "breakdown": {}
+            "breakdown": {},
         }
 
 
 # ============================================================================
 # TASK 3: Implement FeedbackLoop
 # ============================================================================
+
 
 class FeedbackLoop:
     """Collect and validate user corrections for continuous improvement."""
@@ -192,15 +195,20 @@ class FeedbackLoop:
         self.corrections = []
         # Authority hierarchy for role-based validation
         self.authority = {
-            "intern": 0,
             "engineer": 1,
-            "manager": 2,
-            "director": 3,
-            "executive": 4
+            "hr": 2,
+            "finance": 2,
+            "manager": 3,
+            "executive": 4,
         }
 
-    def submit_correction(self, original_query: str, original_answer: str,
-                         corrected_answer: str, user_role: str) -> Dict[str, Any]:
+    def submit_correction(
+        self,
+        original_query: str,
+        original_answer: str,
+        corrected_answer: str,
+        user_role: str,
+    ) -> Dict[str, Any]:
         """Submit a correction to the agent's answer.
 
         TODO: Validate and store correction
@@ -225,7 +233,7 @@ class FeedbackLoop:
         """Validate a stored correction is accurate.
 
         TODO: Check correction quality:
-        1. User role has sufficient authority (manager+)
+        1. User role has sufficient authority (manager+, i.e. level 3 or above)
         2. Correction is more detailed than original
         3. Correction makes sense
 
@@ -255,5 +263,25 @@ class FeedbackLoop:
             "total_corrections": len(self.corrections),
             "validation_rate": 0.0,
             "avg_correction_length": 0.0,
-            "top_error_patterns": []
+            "top_error_patterns": [],
         }
+
+
+if __name__ == "__main__":
+    # Basic structure is provided below. Add your own test cases to verify your implementation.
+    # Run with: python3 cost_optimization_starter.py
+
+    # Test CostAnalyzer
+    print("Testing CostAnalyzer...")
+    analyzer = CostAnalyzer()
+    # TODO: record a query and verify get_cost_breakdown() returns correct totals
+
+    # Test OptimizationStrategy
+    print("\nTesting OptimizationStrategy...")
+    optimizer = OptimizationStrategy()
+    # TODO: test apply_caching, select_model_by_complexity, and optimize_retrieval_count
+
+    # Test FeedbackLoop
+    print("\nTesting FeedbackLoop...")
+    feedback = FeedbackLoop()
+    # TODO: submit corrections with different roles and verify accepted/rejected correctly

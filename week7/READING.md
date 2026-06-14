@@ -20,7 +20,7 @@ Week 7 presents three correlated problems: cost tripled, latency increased, accu
 - Accuracy decreases because retrieved documents are poor quality
 
 **Scenario 2: Corpus bloat causes retrieval failure.**
-- New documents added to corpus (corpus_week7_bloated.json)
+- New documents added to corpus
 - Retrieval now searches a larger space and returns less relevant results
 - Agent wastes tokens on irrelevant documents
 - Accuracy drops because agent is confused by poor retrieval
@@ -226,7 +226,7 @@ Site Reliability Engineering (SRE) is a discipline for operating systems at scal
 
 Real scenario: A deployed agent starts showing accuracy degradation. Cause:
 
-1. Corpus was updated with new documents (corpus_week7_bloated.json)
+1. Corpus was updated with new documents
 2. Search index was not rebuilt; search still indexes old corpus
 3. Agents retrieve old documents (no new policy info), can't answer new questions
 4. Users correct the agent with feedback
@@ -256,7 +256,7 @@ Prevention:
 [Uber's ML at Scale: Increasing Integrity and Velocity](https://www.uber.com/us/en/blog/enhancing-the-quality-of-machine-learning-systems-at-scale/)
 - Case study on deploying ML systems operationally
 
-[Cost Optimization for Machine Learning: A Comprehensive Guide](https://www.sagemaker.aws/docs/cost-optimization)
+[Cost Optimization for Machine Learning: A Comprehensive Guide](https://docs.aws.amazon.com/whitepapers/latest/ml-best-practices-public-sector-organizations/cost-optimization.html)
 - Strategies for reducing ML infrastructure costs
 
 [ML Systems Design Patterns](https://github.com/mercari/ml-system-design-pattern)

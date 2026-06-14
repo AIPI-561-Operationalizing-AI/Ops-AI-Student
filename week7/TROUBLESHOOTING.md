@@ -10,9 +10,9 @@
 - Cache should store both question AND response
 - Test caching:
   ```python
-  strategy = OptimizationStrategy()
-  hit1, resp1 = strategy.apply_caching("What is policy?", "Answer 1")
-  hit2, resp2 = strategy.apply_caching("What is policy?", "Answer 2")
+  optimizer = OptimizationStrategy()
+  hit1, resp1 = optimizer.apply_caching("What is policy?", "Answer 1")
+  hit2, resp2 = optimizer.apply_caching("What is policy?", "Answer 2")
   
   assert hit1 == False  # First call, not cached
   assert hit2 == True   # Second call, cached
@@ -63,14 +63,32 @@
   ```python
   analyzer = CostAnalyzer()
   for i in range(10):
-      analyzer.record_query({"total_cost": 0.01})
-  analyzer.record_query({"total_cost": 1.0})  # 100x more expensive
-  
+      analyzer.record_query({
+        "query_text": f"query {i}",
+        "retrieval_cost": 0.001,
+        "llm_cost": 0.005,
+        "tool_cost": 0.0,
+        "error_cost": 0.0,
+        "total_cost": 0.01,
+        "timestamp": datetime.utcnow().isoformat()
+    })
+  analyzer.record_query({ # 100x more expensive
+    "query_text": "expensive query",
+    "retrieval_cost": 0.5,
+    "llm_cost": 0.4,
+    "tool_cost": 0.1,
+    "error_cost": 0.0,
+    "total_cost": 1.0,
+    "timestamp": datetime.utcnow().isoformat()
+  })
+
   spikes = analyzer.identify_cost_spikes()
   assert len(spikes) > 0
   ```
 
 ## Testing Issues
+
+All code snippets below are reference implementations for methods in `cost_optimization_starter.py`.
 
 ### Test Fails: "apply_caching not implemented"
 **Solution:**
@@ -98,19 +116,21 @@
 **Solution:**
 - Implement authority hierarchy:
   ```python
-  AUTHORITY = {
-      "intern": 0,
-      "engineer": 1,
-      "manager": 2,
-      "director": 3,
-      "executive": 4
-  }
+    def __init__(self):
+      self.corrections = []
+      self.authority = {
+          "engineer": 1,
+          "hr": 2,
+          "finance": 2,
+          "manager": 3,
+          "executive": 4
+      }
   
   def validate_correction(self, index: int) -> bool:
       correction = self.corrections[index]
-      authority = AUTHORITY.get(correction["user_role"], 0)
+      authority = self.authority.get(correction["user_role"], 0)
       # Need manager+ authority to accept corrections
-      return authority >= 2 and len(correction["corrected"]) > len(correction["original"])
+      return authority >= 3 and len(correction["corrected_answer"]) > len(correction["original_answer"])
   ```
 
 ## Performance Issues
@@ -123,6 +143,7 @@
   ```python
   from collections import OrderedDict
   
+  # Optional enhancement: add max_cache_size parameter to limit memory usage
   class OptimizationStrategy:
       def __init__(self, max_cache_size=1000):
           self.cache = OrderedDict()

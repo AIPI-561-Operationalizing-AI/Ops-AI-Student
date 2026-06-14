@@ -1,9 +1,0 @@
-[
-  {
-    "query": "What is the travel policy for flights over 8 hours?",
-    "user_role": "engineer",
-    "original_answer": "There is no specific policy for 8+ hour flights.",
-    "corrected_answer": "Employees can book business class for flights over 8 hours with manager approval.",
-    "correction_accuracy": 0.95
-  }
-]
